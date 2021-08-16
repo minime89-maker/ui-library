@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alert {
+	@apply py-2 px-4 flex text-body items-center justify-between border w-max rounded-default shadow-md;
+}
+.label{
+	@apply py-1 px-2.5 flex items-center justify-between w-max rounded-round  uppercase text-body shadow-md border font-semibold;
+}
+.card{
+	@apply py-4 px-8 flex items-center justify-between flex-col flex-wrap shadow-md rounded-default  sm:min-w-min sm:max-w-sm md:min-w-min md:max-w-sm lg:min-w-min lg:max-w-md
+	bg-gray-10
+	group ease-linear transition-all duration-150
+	text-left
+}
+.btn{
+	@apply py-2 px-4 min-w-min max-w-full rounded-default shadow-md flex text-center border capitalize font-semibold focus:bg-gray-20 
+}
+.input-primary{
+	@apply py-2 px-4 placeholder-gray-30 border border-gray-30 focus:ring focus:outline-none
+	ring-blue-50
+	focus:placeholder-gray-50 rounded-default
+}
+.input-secondary{
+	@apply py-2 px-4 placeholder-gray-30 border-b-2 border-gray-30 focus:placeholder-gray-50 focus:outline-none focus:rounded-default
+}
+.input-submits{
+	 @apply  py-2 px-4 min-w-min max-w-full rounded-default shadow-md bg-white text-center border uppercase font-semibold 
+}
+.text-area-primary{
+	@apply border border-gray-30 px-4 py-2 rounded-default outline-none focus:ring ring-blue-50 focus:placeholder-gray-50 focus:outline-none
+}
+.text-area-secondary{
+	@apply border-b border-gray-30 px-4 py-2 outline-none 
+	 focus:placeholder-gray-50
+	focus:rounded-default focus:outline-none
+}
+
+
+/* Types */
+
+.text_link{
+	@apply text-blue-70 
+}
+.link{
+	@apply border-0 shadow-none text-blue-60 focus:text-gray-80
+}
+.primary {
+	@apply bg-blue-60 border-0 text-gray-10 focus:bg-blue-70 focus:shadow-lg 
+}
+.secondary {
+	@apply bg-gray-70 border-0 text-gray-10
+	focus:bg-gray-80 focus:shadow-lg 
+}
+.success {
+	@apply bg-green-50 border-0 text-gray-10
+	focus:bg-green-60 focus:shadow-lg
+}
+.warning {
+	@apply bg-yellow-40 border-0 text-gray-10
+	focus:bg-yellow-50 focus:shadow-lg
+}
+.error {
+	@apply bg-red-50 border-0 text-gray-10
+	focus:bg-red-60 focus:shadow-lg
+}
+.small {
+	@apply text-body py-1 px-2
+}
+.medium {
+	@apply text-body py-2 px-4 
+}
+.large{
+	@apply text-h4 py-3 px-6
+}
+.textPrimary {
+	@apply text-gray-80 
+}
+.textSecondary {
+	@apply text-gray-10
+}
+.textError {
+	@apply text-red-60
+}
