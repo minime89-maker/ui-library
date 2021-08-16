@@ -14,18 +14,14 @@ Combining the power of TailwindCSS with the simplicity of React, Minja UI is a c
 ## Quick Start
 <hr>
 
-1. npm install minja-ui
+1. ```jsx 
+	npm install minja-ui
+	```
 
 2. Import the components you need in your project.
 
 	```jsx
 	import { Button, Input } from 'minja-ui';
-	```
-
-	You can also import all components at once.
-
-	```jsx
-	import { All } from 'minja-ui';
 	```
 
 <br />
