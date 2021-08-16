@@ -12,6 +12,6 @@ import Radio from './components/Radios/Radio'
 import TextArea from './components/TextAreas/TextArea'
 import TextAreaOutline from './components/TextAreas/TextAreaOutline'
 import TextCard from './components/TextCard/TextCard'
-import * as All from './components'
+import * as All from './components/'
 
 export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutline, MediaCard, Radio, TextArea, TextAreaOutline, TextCard, All }
