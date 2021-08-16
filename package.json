@@ -12,6 +12,10 @@
     "dist",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minime89-maker/ui-library.git"
+  },
   "dependencies": {
     "@carbon/colors": "^10.30.0",
     "@carbon/icons-react": "^10.37.0",
