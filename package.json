@@ -7,15 +7,16 @@
   "author": "Minja",
   "license": "MIT",
   "description": "A library of reusable React components created with TailwindCSS.",
-  "keywords": ["react", "ui", "tailwindcss", "storybook"],
+  "keywords": [
+    "react",
+    "ui",
+    "tailwindcss",
+    "storybook"
+  ],
   "files": [
     "dist",
     "README.md"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/minime89-maker/ui-library.git"
-  },
   "dependencies": {
     "@carbon/colors": "^10.30.0",
     "@carbon/icons-react": "^10.37.0",
@@ -89,5 +90,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/minime89-maker/ui-library/issues"
+  },
+  "homepage": "https://github.com/minime89-maker/ui-library#readme"
 }
