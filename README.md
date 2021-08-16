@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Minja UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A library of reusable React components created with TailwindCSS.
 
-## Available Scripts
+## Mission
 
-In the project directory, you can run:
+Combining the power of TailwindCSS with the simplicity of React, Minja UI is a collection of components that help you build a better user experience. 
 
-### `npm start`
+[Go to docs to see complete, live examples](https://windmillui.com/react-ui)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Usage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Install
 
-### `npm test`
+```sh
+npm i @windmill/react-ui
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inside `tailwind.config.js`
 
-### `npm run build`
+```js
+const windmill = require('@windmill/react-ui/config')
+module.exports = windmill({
+  purge: [],
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+})
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Then place `Windmill` at the root of your project (the order doesn't matter, as long as your application is inside).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```js
+// index.js
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import { Windmill } from '@windmill/react-ui'
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ReactDOM.render(
+  <Windmill>
+    <App />
+  </Windmill>,
+  document.getElementById('root')
+)
+```
 
-### `npm run eject`
+Use components inside your project
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```js
+import { Button } from '@windmill/react-ui'
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+function App() {
+  return <Button>Hi there!</Button>
+}
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+export default App
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🔌 Contributing
 
-## Learn More
+- Fork
+- Clone
+- `npm install`
+- `npm run storybook`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+It will start a local server at `localhost:6006` with all components rendered.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+⚠ Use `npm run cz` instead of `git commit`! It will guide you through some short questions and guarantee that you commit message is standardized.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Commit will also trigger linting and test coverage.
