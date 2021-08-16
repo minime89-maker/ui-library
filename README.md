@@ -2,72 +2,47 @@
 
 A library of reusable React components created with TailwindCSS.
 
+<br />
+
 ## Mission
+<hr>
 
 Combining the power of TailwindCSS with the simplicity of React, Minja UI is a collection of components that help you build a better user experience. 
 
-[Go to docs to see complete, live examples](https://windmillui.com/react-ui)
+<br />
 
-## 🚀 Usage
+## Quick Start
+<hr>
 
-Install
+1. npm install minja-ui
 
-```sh
-npm i @windmill/react-ui
-```
+2. Import the components you need in your project.
 
-Inside `tailwind.config.js`
+	```jsx
+	import { Button, Input } from 'minja-ui';
+	```
 
-```js
-const windmill = require('@windmill/react-ui/config')
-module.exports = windmill({
-  purge: [],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
-})
-```
+	You can also import all components at once.
 
-Then place `Windmill` at the root of your project (the order doesn't matter, as long as your application is inside).
+	```jsx
+	import { All } from 'minja-ui';
+	```
 
-```js
-// index.js
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
-import { Windmill } from '@windmill/react-ui'
+<br />
 
-ReactDOM.render(
-  <Windmill>
-    <App />
-  </Windmill>,
-  document.getElementById('root')
-)
-```
+## Documentation
+<hr>
 
-Use components inside your project
+<li>
+	<a href="https://minja-ui.netlify.app/" target="_blank">
+		Storybook
+	</a>
+</li>
 
-```js
-import { Button } from '@windmill/react-ui'
+<br />
 
-function App() {
-  return <Button>Hi there!</Button>
-}
+## License
+<hr>
 
-export default App
-```
+	MIT License
 
-## 🔌 Contributing
-
-- Fork
-- Clone
-- `npm install`
-- `npm run storybook`
-
-It will start a local server at `localhost:6006` with all components rendered.
-
-⚠ Use `npm run cz` instead of `git commit`! It will guide you through some short questions and guarantee that you commit message is standardized.
-
-Commit will also trigger linting and test coverage.
