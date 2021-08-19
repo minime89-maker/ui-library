@@ -22,4 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# custom
 /dist/style/tailwind.css
+src/lib/components/Dropdowns

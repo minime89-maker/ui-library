@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
- const MediaCard = ({ intro, title, subtitle, description, action, media, children, className }) => {
+ const MediaCard = ({ intro, title, subtitle, description, action, media, children, className, source }) => {
 	return (
 		<>
 			{children && <div className={className}>{children}</div>}
@@ -16,7 +16,7 @@ import React from 'react'
 					<p className=' text-gray-60 text-body pb-3 weight-light'>{description}</p>
 				</div>
 				<div className='flex justify-end m-4 text-purple-60 font-semibold'>
-					<p>{action}</p>
+					<a href={source} target='_blank'>{action}</a>
 				</div>
 			</div>
 
@@ -33,6 +33,7 @@ MediaCard.propTypes = {
 	media: PropTypes.any,
 	children: PropTypes.node,
 	className: PropTypes.string,
+	source: PropTypes.string,
 }
 
 MediaCard.defaultProps = {
@@ -41,6 +42,7 @@ MediaCard.defaultProps = {
 	subtitle: 'Video Game',
 	description: 'Super Mario is a video game developed by Nintendo and published by Nintendo.',
 	action: 'Run Now!',
+	source: 'https://www.nintendo.com/super-mario-bros',
 	media: 'https://media.wired.com/photos/5926c126af95806129f50868/master/w_2560%2Cc_limit/SuperMarioRunTA.jpg',
 }
 

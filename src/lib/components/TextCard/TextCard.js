@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
- const TextCard = ({ title, subtitle, description, action, children, className, intro }) => {
+ const TextCard = ({ title, subtitle, description, action, children, className, intro, source }) => {
 	return (
 		<>
 			{children && <div className={className}>{children}</div>}
@@ -11,7 +11,7 @@ import React from 'react'
 				<p className='text-gray-60 italic text-body pb-3 break-words'>{subtitle}</p>
 				<p className=' text-gray-60 text-body pb-3 weight-light'>{description}</p>
 				<div className='mt-4 uppercase text-purple-60 font-semibold'>
-					<p>{action}</p>
+					<a href={source} target='_blank'>{action}</a>
 				</div>
 			</div>
 		</>
@@ -26,6 +26,7 @@ TextCard.propTypes = {
 	children: PropTypes.node,
 	className: PropTypes.string,
 	intro: PropTypes.string,
+	source: PropTypes.string
 }
 
 TextCard.defaultProps = {
@@ -33,6 +34,7 @@ TextCard.defaultProps = {
 	subtitle: 'Italian restaurant',
 	description: 'Small plates, salads & sandwiches an intimate setting with 12 indoor seats plus pation seating.',
 	action: 'Book a Table',
+	source: 'https://www.google.com',
 	children: null,
 	className: '',
 	intro: 'New York, NY',

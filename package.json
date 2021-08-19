@@ -90,9 +90,5 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3"
-  },
-  "bugs": {
-    "url": "https://github.com/minime89-maker/ui-library/issues"
-  },
-  "homepage": "https://github.com/minime89-maker/ui-library#readme"
+  }
 }
