@@ -1,6 +1,6 @@
 # Minja UI
 
-Minimalistic React UI Library, based on TailwindCSS. 
+Minimalistic React UI Library based on IBM Design Language, implemented with TailwindCSS. 
 
 <br />
 

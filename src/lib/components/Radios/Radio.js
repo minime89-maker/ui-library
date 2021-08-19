@@ -9,7 +9,7 @@ import cn from 'classnames'
 
 
 	return (
-		<div className='flex items-center justify-start'>
+		<div className={`${classes} flex items-center justify-start`}>
 			{ children && <div className={className}>{children}</div>}
 			<input 
 			type="radio" 
