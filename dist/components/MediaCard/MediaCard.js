@@ -19,7 +19,8 @@ var MediaCard = function MediaCard(_ref) {
       action = _ref.action,
       media = _ref.media,
       children = _ref.children,
-      className = _ref.className;
+      className = _ref.className,
+      source = _ref.source;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("div", {
@@ -41,7 +42,10 @@ var MediaCard = function MediaCard(_ref) {
     className: " text-gray-60 text-body pb-3 weight-light"
   }, description)), /*#__PURE__*/_react.default.createElement("div", {
     className: "flex justify-end m-4 text-purple-60 font-semibold"
-  }, /*#__PURE__*/_react.default.createElement("p", null, action))));
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: source,
+    target: "_blank"
+  }, action))));
 };
 
 MediaCard.propTypes = {
@@ -52,7 +56,8 @@ MediaCard.propTypes = {
   action: _propTypes.default.any,
   media: _propTypes.default.any,
   children: _propTypes.default.node,
-  className: _propTypes.default.string
+  className: _propTypes.default.string,
+  source: _propTypes.default.string
 };
 MediaCard.defaultProps = {
   intro: 'Nintendo',
@@ -60,6 +65,7 @@ MediaCard.defaultProps = {
   subtitle: 'Video Game',
   description: 'Super Mario is a video game developed by Nintendo and published by Nintendo.',
   action: 'Run Now!',
+  source: 'https://www.nintendo.com/super-mario-bros',
   media: 'https://media.wired.com/photos/5926c126af95806129f50868/master/w_2560%2Cc_limit/SuperMarioRunTA.jpg'
 };
 var _default = MediaCard;

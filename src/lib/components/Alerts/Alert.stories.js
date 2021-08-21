@@ -7,8 +7,8 @@ export default {
 }
 
 const Template = (args) => <Alert {...args} />
-export const Default = Template.bind({})
-Default.args = {
+export const Standard = Template.bind({})
+Standard.args = {
 	type: 'alert',
 	label: 'This is a Alert!',
 	size: 'medium',

@@ -7,4 +7,4 @@ export default {
 }
 
 const Template = (args) => <TextArea {...args} />
-export const Default = Template.bind(null)
+export const Filled = Template.bind(null)

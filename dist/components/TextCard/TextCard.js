@@ -18,7 +18,8 @@ var TextCard = function TextCard(_ref) {
       action = _ref.action,
       children = _ref.children,
       className = _ref.className,
-      intro = _ref.intro;
+      intro = _ref.intro,
+      source = _ref.source;
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("div", {
@@ -33,7 +34,10 @@ var TextCard = function TextCard(_ref) {
     className: " text-gray-60 text-body pb-3 weight-light"
   }, description), /*#__PURE__*/_react.default.createElement("div", {
     className: "mt-4 uppercase text-purple-60 font-semibold"
-  }, /*#__PURE__*/_react.default.createElement("p", null, action))));
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: source,
+    target: "_blank"
+  }, action))));
 };
 
 TextCard.propTypes = {
@@ -43,13 +47,15 @@ TextCard.propTypes = {
   action: _propTypes.default.any,
   children: _propTypes.default.node,
   className: _propTypes.default.string,
-  intro: _propTypes.default.string
+  intro: _propTypes.default.string,
+  source: _propTypes.default.string
 };
 TextCard.defaultProps = {
   title: 'Cafe Luigi',
   subtitle: 'Italian restaurant',
   description: 'Small plates, salads & sandwiches an intimate setting with 12 indoor seats plus pation seating.',
   action: 'Book a Table',
+  source: 'https://www.google.com',
   children: null,
   className: '',
   intro: 'New York, NY'

@@ -11,7 +11,7 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TextAreaOutline = function TextAreaOutline(_ref) {
+var TextAreaOutlined = function TextAreaOutlined(_ref) {
   var children = _ref.children,
       className = _ref.className,
       name = _ref.name,
@@ -27,7 +27,7 @@ var TextAreaOutline = function TextAreaOutline(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
-    className: "absolute left-0 m-1 px-0.5 bg-white -top-3.5 text-gray-50 text-sm   ",
+    className: "absolute left-0 m-1 px-0.5 bg-white -top-3 text-gray-50 text-xs   ",
     htmlFor: id
   }, label || 'Message'), /*#__PURE__*/_react.default.createElement("textarea", {
     name: name,
@@ -37,11 +37,11 @@ var TextAreaOutline = function TextAreaOutline(_ref) {
     placeholder: placeholder,
     onChange: onChange,
     maxLength: maxLength,
-    className: "p-2 rounded-default border-2 border-gray-30 placeholder-gray-30 text-gray-80 focus:outline-none focus:border-red-50"
+    className: "p-2 rounded-default border-2 border-gray-30 placeholder-gray-30 text-gray-80 focus:outline-none focus:border-red"
   }));
 };
 
-TextAreaOutline.propTypes = {
+TextAreaOutlined.propTypes = {
   children: _propTypes.default.node,
   className: _propTypes.default.string,
   name: _propTypes.default.string,
@@ -53,7 +53,7 @@ TextAreaOutline.propTypes = {
   required: _propTypes.default.bool,
   onChange: _propTypes.default.func
 };
-TextAreaOutline.defaultProps = {
+TextAreaOutlined.defaultProps = {
   className: '',
   name: 'Message',
   id: 'message',
@@ -63,5 +63,5 @@ TextAreaOutline.defaultProps = {
   required: false,
   label: 'Message'
 };
-var _default = TextAreaOutline;
+var _default = TextAreaOutlined;
 exports.default = _default;

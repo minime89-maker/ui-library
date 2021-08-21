@@ -28,7 +28,7 @@ var TextArea = function TextArea(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
-    className: "absolute left-0 m-1 px-0.5 bg-white -top-3.5 text-gray-50 text-sm   ",
+    className: "absolute left-0 m-1 bg-transparent -top-5 text-gray-50 text-xs   ",
     htmlFor: id
   }, label || 'Message'), /*#__PURE__*/_react.default.createElement("textarea", {
     name: name,
@@ -38,7 +38,7 @@ var TextArea = function TextArea(_ref) {
     placeholder: placeholder,
     onChange: onChange,
     maxLength: maxLength,
-    className: "px-2 py-3  border-b-2 border-gray-30 text-gray-80 placeholder-gray-30 focus:outline-none focus:border-red-50"
+    className: "px-2 py-3  border-b-2 bg-gray-10 border-gray-30 text-gray-80 placeholder-gray-30 focus:outline-none focus:border-red"
   })));
 };
 

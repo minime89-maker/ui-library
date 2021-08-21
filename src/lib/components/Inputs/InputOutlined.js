@@ -1,19 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const InputOutline = ({ children, className, placeholder, disabled, type, onChange, id, name, label,onFocus, onBlur }) => {
+const InputOutlined = ({ children, className, placeholder, disabled, type, onChange, id, name, label,onFocus, onBlur }) => {
 
 	return (
 		<div className='w-max relative'>
 			{children && <div className={className}>{children}</div>}
-			{label && <label className='absolute left-0 m-1 px-0.5 bg-white -top-3.5 text-gray-50 text-sm  
+			{label && <label className='absolute left-0 m-1 px-0.5 bg-white -top-3 text-gray-50 text-xs  
 			 ' htmlFor={id}>{label || 'Email address'}</label>}
-			<input type={type} placeholder={placeholder} onFocus={onFocus} onBlur={onBlur} disabled={disabled} id={id} name={name} onChange={onChange} className='rounded-default px-2 h-10 w-full border-2 border-gray-30 text-gray-80 focus:outline-none focus:border-red-50' />
+			<input type={type} placeholder={placeholder} onFocus={onFocus} onBlur={onBlur} disabled={disabled} id={id} name={name} onChange={onChange} className='rounded-default px-2 h-10 w-full border-2 border-gray-30 text-gray-80 focus:outline-none focus:border-red' />
 		</div>
 	)
 }
 
-InputOutline.propTypes = {
+InputOutlined.propTypes = {
 	children: PropTypes.node,
 	className: PropTypes.string,
 	placeholder: PropTypes.string,
@@ -27,7 +27,7 @@ InputOutline.propTypes = {
 	onBlur: PropTypes.func
 }
 
-InputOutline.defaultProps = {
+InputOutlined.defaultProps = {
 	placeholder: '',
 	disabled: false,
 	type: 'password',
@@ -35,4 +35,4 @@ InputOutline.defaultProps = {
 	label: 'Password'
 }
 
-export default InputOutline
+export default InputOutlined

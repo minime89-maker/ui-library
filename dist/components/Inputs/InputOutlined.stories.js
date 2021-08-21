@@ -3,23 +3,23 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Filled = exports.default = void 0;
+exports.Outlined = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _Input = _interopRequireDefault(require("./Input"));
+var _InputOutlined = _interopRequireDefault(require("./InputOutlined"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
   title: 'Example/Input',
-  component: _Input.default
+  component: _InputOutlined.default
 };
 exports.default = _default;
 
 var Template = function Template(args) {
-  return /*#__PURE__*/_react.default.createElement(_Input.default, args);
+  return /*#__PURE__*/_react.default.createElement(_InputOutlined.default, args);
 };
 
-var Filled = Template.bind(null);
-exports.Filled = Filled;
+var Outlined = Template.bind(null);
+exports.Outlined = Outlined;

@@ -6,11 +6,11 @@ import React from 'react'
 		<div>
 			<div className={`${className} relative w-max`}>
 				{children && <div className={className}>{children}</div>}
-				{label && <label className='absolute left-0 m-1 px-0.5 bg-white -top-3.5 text-gray-50 text-sm  
+				{label && <label className='absolute left-0 m-1 bg-transparent -top-5 text-gray-50 text-xs  
 			 ' htmlFor={id} >{label || 'Message'}</label>}
 				<textarea name={name} id={id} cols={cols} rows={rows} placeholder={placeholder}
 					onChange={onChange}
-					maxLength={maxLength} className='px-2 py-3  border-b-2 border-gray-30 text-gray-80 placeholder-gray-30 focus:outline-none focus:border-red-50' ></textarea>
+					maxLength={maxLength} className='px-2 py-3  border-b-2 bg-gray-10 border-gray-30 text-gray-80 placeholder-gray-30 focus:outline-none focus:border-red' ></textarea>
 			</div>
 		</div>
 	)

@@ -7,4 +7,4 @@ export default {
 }
 
 const Template = (args) => <Avatar {...args} />
-export const Default = Template.bind(null)
+export const Standard = Template.bind(null)
