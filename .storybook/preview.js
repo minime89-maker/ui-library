@@ -11,7 +11,7 @@ export const parameters = {
 
 // Global Decorator
 addDecorator((story) => {
-  return <div className="text-body text-gray-90
+  return <div className="text-body text-gray-80
   ">
     {story()}
   </div>

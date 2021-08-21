@@ -24,7 +24,8 @@ var Input = function Input(_ref) {
       name = _ref.name,
       label = _ref.label,
       onFocus = _ref.onFocus,
-      onBlur = _ref.onBlur;
+      onBlur = _ref.onBlur,
+      blue = _ref.blue;
   var classes = (0, _classnames.default)({
     'opacity-50': disabled
   });
@@ -33,18 +34,19 @@ var Input = function Input(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
-    className: "absolute m-1 px-0.5 left-0 -top-3.5 text-gray-50 text-sm  ",
+    className: "absolute left-0 -top-4 text-gray-50 text-xs  ",
     htmlFor: id
   }, label || 'Email address'), /*#__PURE__*/_react.default.createElement("input", {
     type: type,
     placeholder: placeholder,
     disabled: classes,
+    blue: blue,
     id: id,
     name: name,
     onChange: onChange,
     onFocus: onFocus,
     onBlur: onBlur,
-    className: "h-10 px-2 w-full  border-b-2 border-gray-30 text-gray-80  focus:outline-none focus:border-red-50 "
+    className: "".concat(classes, " h-8 px-2 w-full bg-gray-10 border-b-2 border-gray-30 text-gray-80  focus:outline-none focus:border-red")
   }));
 };
 
@@ -59,7 +61,8 @@ Input.propTypes = {
   name: _propTypes.default.string,
   label: _propTypes.default.string,
   onFocus: _propTypes.default.func,
-  onBlur: _propTypes.default.func
+  onBlur: _propTypes.default.func,
+  blue: _propTypes.default.bool
 };
 Input.defaultProps = {
   placeholder: '',

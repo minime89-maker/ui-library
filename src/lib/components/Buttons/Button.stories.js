@@ -8,8 +8,8 @@ export default {
 }
 
 const Template = (args) => <Button {...args} />
-export const Default = Template.bind({});
-Default.args = {
+export const Standard = Template.bind({});
+Standard.args = {
   variant: 'btn',
 	size: 'medium',
 	disabled: false

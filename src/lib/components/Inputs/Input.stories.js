@@ -7,4 +7,4 @@ export default {
 }
 
 const Template = (args) => <Input {...args} />
-export const Default = Template.bind(null)
+export const Filled = Template.bind(null)

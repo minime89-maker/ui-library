@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Default = exports.default = void 0;
+exports.Filled = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -21,5 +21,5 @@ var Template = function Template(args) {
   return /*#__PURE__*/_react.default.createElement(_TextArea.default, args);
 };
 
-var Default = Template.bind(null);
-exports.Default = Default;
+var Filled = Template.bind(null);
+exports.Filled = Filled;

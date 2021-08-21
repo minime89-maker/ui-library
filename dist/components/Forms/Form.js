@@ -9,9 +9,9 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _react = _interopRequireDefault(require("react"));
 
-var _InputOutline = _interopRequireDefault(require("../Inputs/InputOutline"));
+var _InputOutlined = _interopRequireDefault(require("../Inputs/InputOutlined"));
 
-var _TextAreaOutline = _interopRequireDefault(require("../TextAreas/TextAreaOutline"));
+var _TextAreaOutlined = _interopRequireDefault(require("../TextAreas/TextAreaOutlined"));
 
 var _Button = _interopRequireDefault(require("../Buttons/Button"));
 
@@ -36,13 +36,13 @@ var Form = function Form(_ref) {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("p", {
     className: "text-h2 mb-8 font-semibold"
-  }, "Contact Us"), /*#__PURE__*/_react.default.createElement(_InputOutline.default, {
+  }, "Contact Us"), /*#__PURE__*/_react.default.createElement(_InputOutlined.default, {
     type: "text",
     label: "First Name"
-  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_InputOutline.default, {
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_InputOutlined.default, {
     type: "text",
     label: "Email Address"
-  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_TextAreaOutline.default, {
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_TextAreaOutlined.default, {
     rows: 4,
     cols: 19,
     className: "mb-4"

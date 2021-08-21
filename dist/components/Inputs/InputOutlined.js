@@ -11,7 +11,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var InputOutline = function InputOutline(_ref) {
+var InputOutlined = function InputOutlined(_ref) {
   var children = _ref.children,
       className = _ref.className,
       placeholder = _ref.placeholder,
@@ -28,7 +28,7 @@ var InputOutline = function InputOutline(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
-    className: "absolute left-0 m-1 px-0.5 bg-white -top-3.5 text-gray-50 text-sm   ",
+    className: "absolute left-0 m-1 px-0.5 bg-white -top-3 text-gray-50 text-xs   ",
     htmlFor: id
   }, label || 'Email address'), /*#__PURE__*/_react.default.createElement("input", {
     type: type,
@@ -39,11 +39,11 @@ var InputOutline = function InputOutline(_ref) {
     id: id,
     name: name,
     onChange: onChange,
-    className: "rounded-default px-2 h-10 w-full border-2 border-gray-30 text-gray-80 focus:outline-none focus:border-red-50"
+    className: "rounded-default px-2 h-10 w-full border-2 border-gray-30 text-gray-80 focus:outline-none focus:border-red"
   }));
 };
 
-InputOutline.propTypes = {
+InputOutlined.propTypes = {
   children: _propTypes.default.node,
   className: _propTypes.default.string,
   placeholder: _propTypes.default.string,
@@ -56,12 +56,12 @@ InputOutline.propTypes = {
   onFocus: _propTypes.default.func,
   onBlur: _propTypes.default.func
 };
-InputOutline.defaultProps = {
+InputOutlined.defaultProps = {
   placeholder: '',
   disabled: false,
   type: 'password',
   onChange: function onChange() {},
   label: 'Password'
 };
-var _default = InputOutline;
+var _default = InputOutlined;
 exports.default = _default;

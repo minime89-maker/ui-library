@@ -25,7 +25,7 @@ var Radio = function Radio(_ref) {
     'animate-pulse': onChange === true
   }, className);
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "flex items-center justify-start"
+    className: "".concat(classes, " flex items-center justify-start")
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("input", {

@@ -10,9 +10,9 @@ import cn from 'classnames'
 	return (
 		<div className='w-max relative'>
 			{children && <div className={className}>{children}</div>}
-			{label && <label className='absolute m-1 px-0.5 left-0 -top-3.5 text-gray-50 text-sm 
+			{label && <label className='absolute left-0 -top-4 text-gray-50 text-xs 
 			 ' htmlFor={id}>{label || 'Email address'}</label>}
-			<input type={type} placeholder={placeholder} disabled={classes} blue={blue} id={id} name={name} onChange={onChange} onFocus={onFocus} onBlur={onBlur} className={`${cn} h-10 px-2 w-full  border-b-2 border-gray-30 text-gray-80  focus:outline-none focus:border-red-50`}/>
+			<input type={type} placeholder={placeholder} disabled={classes} blue={blue} id={id} name={name} onChange={onChange} onFocus={onFocus} onBlur={onBlur} className={`${classes} h-8 px-2 w-full bg-gray-10 border-b-2 border-gray-30 text-gray-80  focus:outline-none focus:border-red`}/>
 		</div>
 	)
 }
