@@ -24,4 +24,4 @@ yarn-error.log*
 
 # custom
 /dist/style/tailwind.css
-src/lib/components/Dropdowns
+src/lib/components/Grid
