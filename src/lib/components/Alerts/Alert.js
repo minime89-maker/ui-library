@@ -4,16 +4,17 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
 
-const Alert = ({ type, children, label, size, onClick, className }) => {
+const Alert = ({ type, children, label, size, onClick, className, icon }) => {
 
 const classes = classnames(`alert ${type} ${size} ${className}`)
 
 	return (
 		<>
+			{children && <div className={className}>{children}</div>}
 				<div className={`${classes} `} size={size}>
 				{label}
-				<div className='pl-4 cursor-pointer ' onClick={onClick}>
-					{!children ?  <Close24 /> : children}
+				<div className={`pl-4 cursor-pointer`} onClick={onClick}>
+					{!icon ?  <Close24 /> : icon}
 				</div>
 				</div>
 		</>
@@ -27,6 +28,7 @@ Alert.propTypes = {
 	size: PropTypes.oneOf(['small', 'medium', 'large']),
 	className: PropTypes.string,
 	onClick: PropTypes.func,
+	icon: PropTypes.string
 	
 }
 

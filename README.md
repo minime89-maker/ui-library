@@ -17,7 +17,16 @@ Minimalistic React UI Library based on IBM Design Language, implemented with Tai
 2. Import the components you need in your project.
 
    ```jsx
+   import React from 'react';
    import { Button } from "minja-ui";
+
+   const App = () => {
+      return (
+         <>
+            <Button />
+         </>
+      )
+   }
    ```
 
 3. Import all the components at once.
@@ -36,11 +45,11 @@ Minimalistic React UI Library based on IBM Design Language, implemented with Tai
 	<a href="https://minja-ui.netlify.app/" target="_blank">
 		Storybook
 	</a>
+</li>
 <li>
 	<a href="https://github.com/minime89-maker/ui-library/issues" target='_blank'>
 		Add issue here
 	</a>
-</li>
 </li>
 
 <br />
