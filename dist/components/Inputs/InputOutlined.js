@@ -28,11 +28,12 @@ var InputOutlined = function InputOutlined(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
-    className: "absolute left-0 m-1 px-0.5 bg-white -top-3 text-gray-50 text-xs   ",
+    className: "absolute left-0 m-1 px-0.5 bg-white -top-3 text-gray-60 text-xs   ",
     htmlFor: id
   }, label || 'Email address'), /*#__PURE__*/_react.default.createElement("input", {
     type: type,
     placeholder: placeholder,
+    "aria-label": label,
     onFocus: onFocus,
     onBlur: onBlur,
     disabled: disabled,

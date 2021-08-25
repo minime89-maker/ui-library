@@ -46,6 +46,7 @@ var Dropdown = function Dropdown(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("option", {
+    "aria-label": value,
     className: "text-gray-50 text-xs absolute left-0 m-1 px-0.5 -top-3 bg-white",
     value: value
   }, "Select a Player:"), /*#__PURE__*/_react.default.createElement("select", {

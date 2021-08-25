@@ -37,9 +37,9 @@ var Banner = function Banner(_ref) {
   }, /*#__PURE__*/_react.default.createElement("p", {
     className: "text-h1 text-gray-10 pb-4 font-semibold"
   }, title), /*#__PURE__*/_react.default.createElement("p", {
-    className: "text-h4 text-gray-20 pb-20 italic"
+    className: "text-h4 text-gray-10 pb-20 italic"
   }, description)), /*#__PURE__*/_react.default.createElement("div", null, cta || /*#__PURE__*/_react.default.createElement(_Button.default, {
-    variant: "error"
+    variant: "primary"
   })));
 };
 

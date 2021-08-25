@@ -12,6 +12,7 @@ import cn from 'classnames'
 		<div className={`${classes} flex items-center justify-start`}>
 			{ children && <div className={className}>{children}</div>}
 			<input 
+			aria-label={name}
 			type="radio" 
 			name={name}
 			id={id}

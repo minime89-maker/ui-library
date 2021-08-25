@@ -35,18 +35,16 @@ Minimalistic React UI Library based on IBM Design Language, implemented with Tai
 ## Documentation
 
 <hr>
-
-<li>
-	<a href="https://minja-ui.netlify.app/" target="_blank">
-		Storybook
+	<a href="https://minja-ui.netlify.app/" 
+      target="_blank">
+   Storybook
 	</a>
-</li>
-<li>
+<br />
 	<a href="https://github.com/minime89-maker/ui-library/issues" target='_blank'>
 		Add issue here
 	</a>
-</li>
 
+<br />
 <br />
 
 ## License

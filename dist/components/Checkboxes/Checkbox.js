@@ -21,6 +21,7 @@ var Checkbox = function Checkbox(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "flex items-center"
   }, /*#__PURE__*/_react.default.createElement("input", {
+    "aria-label": id,
     type: "checkbox",
     name: name,
     id: id,
