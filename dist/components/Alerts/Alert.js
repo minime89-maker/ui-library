@@ -21,15 +21,18 @@ var Alert = function Alert(_ref) {
       label = _ref.label,
       size = _ref.size,
       onClick = _ref.onClick,
-      className = _ref.className;
+      className = _ref.className,
+      icon = _ref.icon;
   var classes = (0, _classnames.default)("alert ".concat(type, " ").concat(size, " ").concat(className));
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
+    className: className
+  }, children), /*#__PURE__*/_react.default.createElement("div", {
     className: "".concat(classes, " "),
     size: size
   }, label, /*#__PURE__*/_react.default.createElement("div", {
-    className: "pl-4 cursor-pointer ",
+    className: "pl-4 cursor-pointer",
     onClick: onClick
-  }, !children ? /*#__PURE__*/_react.default.createElement(_iconsReact.Close24, null) : children)));
+  }, !icon ? /*#__PURE__*/_react.default.createElement(_iconsReact.Close24, null) : icon)));
 };
 
 Alert.propTypes = {
@@ -38,7 +41,8 @@ Alert.propTypes = {
   children: _propTypes.default.node,
   size: _propTypes.default.oneOf(['small', 'medium', 'large']),
   className: _propTypes.default.string,
-  onClick: _propTypes.default.func
+  onClick: _propTypes.default.func,
+  icon: _propTypes.default.string
 };
 Alert.defaultProps = {
   type: 'primary',
