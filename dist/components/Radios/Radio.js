@@ -29,6 +29,7 @@ var Radio = function Radio(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("input", {
+    "aria-label": name,
     type: "radio",
     name: name,
     id: id,
