@@ -3,7 +3,7 @@ import Breadcrumbs from './lib/components/Breadcrumbs/Breadcrumbs'
 import Dropdown from './lib/components/Dropdowns/Dropdown'
 import Box from './lib/components/Grid/Box'
 import Item from './lib/components/Grid/Item'
-import InputOutline from './lib/components/Inputs/InputOutlined'
+import InputOutlined from './lib/components/Inputs/InputOutlined'
 import Links from './lib/components/Links/Link'
 import './lib/style/main.css'
 
