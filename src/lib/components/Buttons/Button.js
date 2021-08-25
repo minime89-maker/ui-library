@@ -19,7 +19,7 @@ const Button = ({ className, variant, children, size, disabled, focus, hover, st
 	return (
 		<>
 			<button onClick={onClick} disabled={disabled} onFocus={onFocus}  style={style} onBlur={onBlur} className={`${classes} ${className} `}>{children || 'BUTTON'} 
-			{icon && <div className='ml-2'>{icon}</div>}
+			{icon && <div className='ml-2 '>{icon}</div>}
 			</button>
 		</>
 
@@ -45,7 +45,7 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-	variant: 'primary',
+	variant: 'btn',
 	size: 'medium',
 	disabled: false,
 	icon: ''
