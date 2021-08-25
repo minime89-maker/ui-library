@@ -70,8 +70,8 @@
 	focus:bg-yellow-50 focus:shadow-lg
 }
 .error {
-	@apply bg-red-50 border-0 text-gray-10
-	focus:bg-red-60 focus:shadow-lg
+	@apply bg-red-60 border-0 text-white
+	focus:bg-red-70 focus:shadow-lg
 }
 .small {
 	@apply text-body py-1 px-2
@@ -89,5 +89,5 @@
 	@apply text-gray-10
 }
 .textError {
-	@apply text-red-60
+	@apply text-red-70
 }

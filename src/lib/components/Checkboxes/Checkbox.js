@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 	return (
 		<div className="flex items-center">
 			<input  
+			aria-label={id}
 			type="checkbox" 
 			name={name} 
 			id={id} 

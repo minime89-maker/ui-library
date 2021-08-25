@@ -9,10 +9,10 @@ import React from 'react'
 			{children && <div className={className}>{children}</div>}
 			<div className='w-1/2 text-left'>
 				<p className='text-h1 text-gray-10 pb-4 font-semibold'>{title}</p>
-				<p className='text-h4 text-gray-20 pb-20 italic'>{description}</p>
+				<p className='text-h4 text-gray-10 pb-20 italic'>{description}</p>
 			</div>
 			<div>
-				{cta || <Button variant='error'/>}
+				{cta || <Button variant='primary'/>}
 			</div>
 		</div>
 	)
