@@ -45,10 +45,10 @@ Object.defineProperty(exports, "Input", {
     return _Input.default;
   }
 });
-Object.defineProperty(exports, "InputOutline", {
+Object.defineProperty(exports, "InputOutlined", {
   enumerable: true,
   get: function get() {
-    return _InputOutline.default;
+    return _InputOutlined.default;
   }
 });
 Object.defineProperty(exports, "MediaCard", {
@@ -69,16 +69,28 @@ Object.defineProperty(exports, "TextArea", {
     return _TextArea.default;
   }
 });
-Object.defineProperty(exports, "TextAreaOutline", {
+Object.defineProperty(exports, "TextAreaOutlined", {
   enumerable: true,
   get: function get() {
-    return _TextAreaOutline.default;
+    return _TextAreaOutlined.default;
   }
 });
 Object.defineProperty(exports, "TextCard", {
   enumerable: true,
   get: function get() {
     return _TextCard.default;
+  }
+});
+Object.defineProperty(exports, "Link", {
+  enumerable: true,
+  get: function get() {
+    return _Link.default;
+  }
+});
+Object.defineProperty(exports, "Label", {
+  enumerable: true,
+  get: function get() {
+    return _Label.default;
   }
 });
 
@@ -98,7 +110,7 @@ var _Form = _interopRequireDefault(require("./components/Forms/Form"));
 
 var _Input = _interopRequireDefault(require("./components/Inputs/Input"));
 
-var _InputOutline = _interopRequireDefault(require("./components/Inputs/InputOutline"));
+var _InputOutlined = _interopRequireDefault(require("./components/Inputs/InputOutlined"));
 
 var _MediaCard = _interopRequireDefault(require("./components/MediaCard/MediaCard"));
 
@@ -106,8 +118,12 @@ var _Radio = _interopRequireDefault(require("./components/Radios/Radio"));
 
 var _TextArea = _interopRequireDefault(require("./components/TextAreas/TextArea"));
 
-var _TextAreaOutline = _interopRequireDefault(require("./components/TextAreas/TextAreaOutline"));
+var _TextAreaOutlined = _interopRequireDefault(require("./components/TextAreas/TextAreaOutlined"));
 
 var _TextCard = _interopRequireDefault(require("./components/TextCard/TextCard"));
+
+var _Link = _interopRequireDefault(require("./components/Links/Link"));
+
+var _Label = _interopRequireDefault(require("./components/Labels/Label"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

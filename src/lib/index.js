@@ -6,11 +6,13 @@ import Banner from './components/Banners/Banner'
 import Checkbox from './components/Checkboxes/Checkbox'
 import Form from './components/Forms/Form'
 import Input from './components/Inputs/Input'
-import InputOutline from './components/Inputs/InputOutline'
+import InputOutlined from './components/Inputs/InputOutlined'
 import MediaCard from './components/MediaCard/MediaCard';
 import Radio from './components/Radios/Radio'
 import TextArea from './components/TextAreas/TextArea'
-import TextAreaOutline from './components/TextAreas/TextAreaOutline'
+import TextAreaOutlined from './components/TextAreas/TextAreaOutlined'
 import TextCard from './components/TextCard/TextCard'
+import Link from './components/Links/Link'
+import Label from './components/Labels/Label'
 
-export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutline, MediaCard, Radio, TextArea, TextAreaOutline, TextCard }
+export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutlined, MediaCard, Radio, TextArea, TextAreaOutlined, TextCard, Link, Label  }
