@@ -17,13 +17,13 @@ var Avatar = function Avatar(_ref) {
       image = _ref.image,
       badge = _ref.badge;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "w-max relative "
+    className: "w-max relative"
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("img", {
     src: image,
     alt: "Mario",
-    className: "w-20 h-20 rounded-full shadow-lg"
+    className: "w-20 h-20 rounded-full shadow-md border-2 border-gray-30 object-cover"
   }), /*#__PURE__*/_react.default.createElement("div", null, badge && /*#__PURE__*/_react.default.createElement("div", {
     className: "w-4 h-4 bg-purple-60 border border-white absolute right-0 top-2 rounded-full animate-bounce"
   }, badge)));

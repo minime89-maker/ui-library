@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import cn from 'classnames'
 
  const Radio = ({ name, id, label, onChange,  value, children, className }) => {
-	const classes = cn({
-		'animate-pulse': onChange === true
-	}, className)
 
 
 	return (
-		<div className={`${classes} flex items-center justify-start`}>
+		<div className={`${className} flex items-center justify-start`}>
 			{ children && <div className={className}>{children}</div>}
+			<label className="pr-2 text-gray-80"
+			htmlFor={id}>
+				{label}
+			</label>
 			<input 
 			aria-label={name}
 			type="radio" 
@@ -18,12 +18,8 @@ import cn from 'classnames'
 			id={id}
 			onChange={onChange}
 			value={value}
-			
 			 />
-			<label className="pl-2 text-gray-80"
-			htmlFor={id}>
-				{label}
-			</label>
+			
 		</div>
 	)
 }
@@ -36,13 +32,14 @@ Radio.propTypes = {
 	value: PropTypes.string,
 	children: PropTypes.node,
 	className: PropTypes.string,
+	disabled: PropTypes.bool
 }
 
 Radio.defaultProps = {
 	value: '',
 	className: '',
 	name: 'option',
-
+	disabled: true
 }
 
 export default Radio

@@ -6,11 +6,20 @@ export default {
 	component: Radio,
 }
 
-const Template = (args) => 
+const Template = (args) => <Radio {...args} />
+export const Standard = Template.bind({})
+Standard.args = {
+	name: 'example',
+	id: 1,
+	label: 'Neutral'
+}
 
-<div>
-	<Radio label="boooring 🥱" value="1" {...args} />
-	<Radio label="hmmm 😐" value="2" />
-	<Radio label="rockstar 🤩" value="3" />
-</div>
-export const Default = Template.bind({})
+export const Group = (args) => {
+	return (
+		<>
+			<Radio name="group" id={1} label="Neutral" {...args} />
+			<Radio name="group" id={2} label="Positive" {...args}/>
+			<Radio name="group" id={3} label="Negative" {...args}/>
+		</>
+	)
+}

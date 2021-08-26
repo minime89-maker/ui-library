@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
- const Checkbox = ({name, id, label, disabled, value, onChange }) => {
+ const Checkbox = ({name, children, className, id, label, disabled, value, onChange, checked }) => {
 	return (
 		<div className="flex items-center">
+			{children && <div className={className}>{children}</div>}
+			<label className="pr-2" htmlFor={name}>{label}</label>
 			<input  
 			aria-label={id}
 			type="checkbox" 
@@ -11,9 +13,9 @@ import PropTypes from 'prop-types'
 			id={id} 
 			disabled={disabled} value={value}
 			onChange={onChange}
-			className="w-4 h-4 apperance-none"
+			checked={checked} 
+			className={`${disabled === true ? 'cursor-not-allowed' : 'auto' } h-4 w-4`}
 			/>
-			<label className="pl-1.5" htmlFor={name}>{label}</label>
 		</div>
 	)
 }
@@ -24,7 +26,8 @@ Checkbox.propTypes = {
 	label: PropTypes.string.isRequired,
 	disabled: PropTypes.bool,
 	value: PropTypes.node,
-	onChange: PropTypes.func
+	onChange: PropTypes.func,
+	checked: PropTypes.bool,
 }
 
 Checkbox.defaultProps = {
@@ -33,7 +36,7 @@ Checkbox.defaultProps = {
 	id: 1,
 	value: '',
 	onChange: () => {},
-	label: 'Option 1',
+	label: '',	
 }
 
 export default Checkbox

@@ -6,6 +6,7 @@ import Item from './lib/components/Grid/Item'
 import InputOutlined from './lib/components/Inputs/InputOutlined'
 import Links from './lib/components/Links/Link'
 import './lib/style/main.css'
+import Checkbox from './lib/components/Checkboxes/Checkbox'
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     <div>
      <h1 className="text-red-50">Hello!</h1>
      <br/>
-     <InputOutline />
+     <InputOutlined />
      <br />
      <Dropdown
     id='player'
@@ -59,6 +60,7 @@ function App() {
         href: ''
       },
     ]}/>
+    <Checkbox />
     </div>
   );
 }

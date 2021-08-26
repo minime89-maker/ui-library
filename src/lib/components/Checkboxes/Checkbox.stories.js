@@ -11,6 +11,14 @@ export const Standard = Template.bind();
 Standard.args = {
 	name: 'checkbox',
 	text: 'Checkbox',
-	type: 'checkbox',
+	label: 'Remember me',
 	id:1
+}
+
+export const Disabled = Template.bind({})
+Disabled.args = {
+	disabled: true,
+	label: 'Disabled',
+	name: 'checkbox',
+	id: 2
 }

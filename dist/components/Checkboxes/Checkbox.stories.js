@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Standard = exports.default = void 0;
+exports.Disabled = exports.Standard = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -26,6 +26,14 @@ exports.Standard = Standard;
 Standard.args = {
   name: 'checkbox',
   text: 'Checkbox',
-  type: 'checkbox',
+  label: 'Remember me',
   id: 1
+};
+var Disabled = Template.bind({});
+exports.Disabled = Disabled;
+Disabled.args = {
+  disabled: true,
+  label: 'Disabled',
+  name: 'checkbox',
+  id: 2
 };
