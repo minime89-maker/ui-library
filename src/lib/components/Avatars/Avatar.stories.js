@@ -5,6 +5,12 @@ import AvatarGroup from './AvatarGroup'
 export default {
 	title: 'Example/Avatars',
 	component: Avatar,
+	parameters: {
+		design: {
+			type: 'figma',
+			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=28%3A2'
+		}
+	}
 }
 
 const Template = (args) => <Avatar {...args} />
