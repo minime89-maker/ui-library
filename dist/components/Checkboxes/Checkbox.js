@@ -13,14 +13,22 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Checkbox = function Checkbox(_ref) {
   var name = _ref.name,
+      children = _ref.children,
+      className = _ref.className,
       id = _ref.id,
       label = _ref.label,
       disabled = _ref.disabled,
       value = _ref.value,
-      onChange = _ref.onChange;
+      onChange = _ref.onChange,
+      checked = _ref.checked;
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "flex items-center"
-  }, /*#__PURE__*/_react.default.createElement("input", {
+  }, children && /*#__PURE__*/_react.default.createElement("div", {
+    className: className
+  }, children), /*#__PURE__*/_react.default.createElement("label", {
+    className: "pr-2",
+    htmlFor: name
+  }, label), /*#__PURE__*/_react.default.createElement("input", {
     "aria-label": id,
     type: "checkbox",
     name: name,
@@ -28,11 +36,9 @@ var Checkbox = function Checkbox(_ref) {
     disabled: disabled,
     value: value,
     onChange: onChange,
-    className: "w-4 h-4 apperance-none"
-  }), /*#__PURE__*/_react.default.createElement("label", {
-    className: "pl-1.5",
-    htmlFor: name
-  }, label));
+    checked: checked,
+    className: "".concat(disabled === true ? 'cursor-not-allowed' : 'auto', " h-4 w-4")
+  }));
 };
 
 Checkbox.propTypes = {
@@ -41,7 +47,8 @@ Checkbox.propTypes = {
   label: _propTypes.default.string.isRequired,
   disabled: _propTypes.default.bool,
   value: _propTypes.default.node,
-  onChange: _propTypes.default.func
+  onChange: _propTypes.default.func,
+  checked: _propTypes.default.bool
 };
 Checkbox.defaultProps = {
   disabled: false,
@@ -49,7 +56,7 @@ Checkbox.defaultProps = {
   id: 1,
   value: '',
   onChange: function onChange() {},
-  label: 'Option 1'
+  label: ''
 };
 var _default = Checkbox;
 exports.default = _default;

@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Default = exports.default = void 0;
+exports.Group = exports.Standard = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -20,17 +20,31 @@ var _default = {
 exports.default = _default;
 
 var Template = function Template(args) {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Radio.default, _extends({
-    label: "boooring \uD83E\uDD71",
-    value: "1"
-  }, args)), /*#__PURE__*/_react.default.createElement(_Radio.default, {
-    label: "hmmm \uD83D\uDE10",
-    value: "2"
-  }), /*#__PURE__*/_react.default.createElement(_Radio.default, {
-    label: "rockstar \uD83E\uDD29",
-    value: "3"
-  }));
+  return /*#__PURE__*/_react.default.createElement(_Radio.default, args);
 };
 
-var Default = Template.bind({});
-exports.Default = Default;
+var Standard = Template.bind({});
+exports.Standard = Standard;
+Standard.args = {
+  name: 'example',
+  id: 1,
+  label: 'Neutral'
+};
+
+var Group = function Group(args) {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Radio.default, _extends({
+    name: "group",
+    id: 1,
+    label: "Neutral"
+  }, args)), /*#__PURE__*/_react.default.createElement(_Radio.default, _extends({
+    name: "group",
+    id: 2,
+    label: "Positive"
+  }, args)), /*#__PURE__*/_react.default.createElement(_Radio.default, _extends({
+    name: "group",
+    id: 3,
+    label: "Negative"
+  }, args)));
+};
+
+exports.Group = Group;

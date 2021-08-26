@@ -28,7 +28,7 @@ var TextArea = function TextArea(_ref) {
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
-    className: "absolute left-0 m-1 bg-transparent -top-5 text-gray-60 text-xs   ",
+    className: "absolute left-0 mt-1 bg-transparent -top-5 text-gray-60 text-xs   ",
     htmlFor: id
   }, label || 'Message'), /*#__PURE__*/_react.default.createElement("textarea", {
     name: name,

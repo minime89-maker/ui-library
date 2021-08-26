@@ -93,6 +93,12 @@ Object.defineProperty(exports, "Label", {
     return _Label.default;
   }
 });
+Object.defineProperty(exports, "AvatarGroup", {
+  enumerable: true,
+  get: function get() {
+    return _AvatarGroup.default;
+  }
+});
 
 require("./style/main.css");
 
@@ -125,5 +131,7 @@ var _TextCard = _interopRequireDefault(require("./components/TextCard/TextCard")
 var _Link = _interopRequireDefault(require("./components/Links/Link"));
 
 var _Label = _interopRequireDefault(require("./components/Labels/Label"));
+
+var _AvatarGroup = _interopRequireDefault(require("./components/Avatars/AvatarGroup"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -6,7 +6,7 @@ import React from 'react'
 		<div>
 			<div className={`${className} relative w-max`}>
 				{children && <div className={className}>{children}</div>}
-				{label && <label className='absolute left-0 m-1 bg-transparent -top-5 text-gray-60 text-xs  
+				{label && <label className='absolute left-0 mt-1 bg-transparent -top-5 text-gray-60 text-xs  
 			 ' htmlFor={id} >{label || 'Message'}</label>}
 				<textarea name={name} id={id} cols={cols} rows={rows} placeholder={placeholder}
 					onChange={onChange}

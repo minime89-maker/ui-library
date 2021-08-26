@@ -14,5 +14,6 @@ import TextAreaOutlined from './components/TextAreas/TextAreaOutlined'
 import TextCard from './components/TextCard/TextCard'
 import Link from './components/Links/Link'
 import Label from './components/Labels/Label'
+import AvatarGroup from './components/Avatars/AvatarGroup'
 
-export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutlined, MediaCard, Radio, TextArea, TextAreaOutlined, TextCard, Link, Label  }
+export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutlined, MediaCard, Radio, TextArea, TextAreaOutlined, TextCard, Link, Label, AvatarGroup }
