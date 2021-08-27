@@ -17,7 +17,7 @@ var _default = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=0%3A1'
+      url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=12%3A2'
     }
   }
 };

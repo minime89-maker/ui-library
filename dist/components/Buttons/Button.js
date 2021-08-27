@@ -47,7 +47,7 @@ var Button = function Button(_ref) {
     onBlur: onBlur,
     className: "".concat(classes, " ").concat(className, " ")
   }, children || 'BUTTON', "\xA0", icon && /*#__PURE__*/_react.default.createElement("div", {
-    className: "ml-2"
+    className: "ml-2 "
   }, icon)));
 };
 
@@ -62,7 +62,7 @@ Button.propTypes = (_Button$propTypes = {
   hover: _propTypes.default.bool
 }, _defineProperty(_Button$propTypes, "disabled", _propTypes.default.bool), _defineProperty(_Button$propTypes, "style", _propTypes.default.any), _defineProperty(_Button$propTypes, "block", _propTypes.default.bool), _defineProperty(_Button$propTypes, "color", _propTypes.default.string), _defineProperty(_Button$propTypes, "icon", _propTypes.default.node), _Button$propTypes);
 Button.defaultProps = {
-  variant: 'primary',
+  variant: 'btn',
   size: 'medium',
   disabled: false,
   icon: ''
