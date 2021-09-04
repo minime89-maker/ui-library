@@ -26,4 +26,5 @@ yarn-error.log*
 /dist/style/tailwind.css
 src/lib/components/Grid
 src/lib/components/Breadcrumbs
+src/lib/components/Showcase
 tailwind.json
