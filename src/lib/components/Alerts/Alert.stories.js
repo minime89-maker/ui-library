@@ -19,3 +19,16 @@ Standard.args = {
 	label: 'This is a Alert!',
 	size: 'medium',
 }
+
+const Groups = () => {
+	return (
+		<div className='flex flex-col items-center justify-center'>
+			<Alert type="primary" label="This is a small Alert!" size="small" />
+			<br />
+			<Alert type="primary" label="This is a medium Alert!" size="medium" />
+			<br />
+			<Alert type="primary" label="This is a large Alert!" size="large" />
+		</div>
+	)
+}
+export const GroupsAlert = Groups.bind({})
