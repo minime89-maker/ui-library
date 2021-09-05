@@ -3,11 +3,11 @@ import cn from 'classnames'
 import PropTypes from 'prop-types'
 
 
-const Button = ({ className, variant, children, size, disabled, focus, hover, style, block, color, onClick, onFocus, onBlur, icon}) => {
+const Button = ({ className, variant, children, size, disabled, focus, hover, style, full, color, onClick, onFocus, onBlur, icon}) => {
 
 	const classes = cn('btn',
 		variant,
-		{ 'w-screen text-center justify-center tracking-wide': block },
+		{ 'w-full text-center justify-center tracking-wide': full },
 		className,
 		{ 'opacity-50 cursor-not-allowed ': disabled },
 		focus,
@@ -39,7 +39,7 @@ Button.propTypes = {
 	hover: PropTypes.bool,
 	disabled: PropTypes.bool,
 	style: PropTypes.any,
-	block: PropTypes.bool,
+	full: PropTypes.bool,
 	color: PropTypes.string,
 	icon: PropTypes.node,
 }

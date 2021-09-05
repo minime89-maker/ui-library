@@ -20,3 +20,16 @@ Standard.args = {
 	size: 'medium',
 	disabled: false
 }
+
+const Template2 = () => {
+  return (
+    <div className=" flex flex-col items-center justify-center">
+      <Button variant="primary" size="small" disabled={false} />
+      <br />
+      <Button variant="primary" size="medium" disabled={false} />
+      <br />
+      <Button variant="primary" size="large" disabled={false} />
+    </div>
+  )
+}
+export const Sizes = Template2.bind({});
