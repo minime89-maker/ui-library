@@ -15,7 +15,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _default = {
   title: 'Example/Avatars',
-  component: _Avatar.default
+  component: _Avatar.default,
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=28%3A2'
+    }
+  }
 };
 exports.default = _default;
 

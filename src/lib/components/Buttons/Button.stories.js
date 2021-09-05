@@ -1,7 +1,7 @@
 import React from 'react'
 import  Button  from './Button'
+import { Email24 } from '@carbon/icons-react'
 
-// create a story
 export default {
   title: 'Example / Buttons',
   component: Button,
@@ -18,18 +18,18 @@ export const Standard = Template.bind({});
 Standard.args = {
   variant: 'btn',
 	size: 'medium',
-	disabled: false
+	disabled: false,
 }
 
 const Template2 = () => {
   return (
     <div className=" flex flex-col items-center justify-center">
-      <Button variant="primary" size="small" disabled={false} />
+      <Button variant="primary" icon={<Email24 />} size="small" disabled={false} />
       <br />
-      <Button variant="primary" size="medium" disabled={false} />
+      <Button variant="primary" icon={<Email24 />}  size="medium" disabled={false} />
       <br />
-      <Button variant="primary" size="large" disabled={false} />
+      <Button variant="primary" icon={<Email24 />}  size="large" disabled={false} />
     </div>
   )
 }
-export const Sizes = Template2.bind({});
+export const Sizes = Template2.bind({}); 
