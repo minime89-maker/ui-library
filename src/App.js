@@ -7,6 +7,8 @@ import InputOutlined from './lib/components/Inputs/InputOutlined'
 import Links from './lib/components/Links/Link'
 import './lib/style/main.css'
 import Checkbox from './lib/components/Checkboxes/Checkbox'
+import Alert from './lib/components/Alerts/Alert'
+import Block from './lib/components/Block/Block'
 
 
 function App() {
@@ -25,6 +27,12 @@ function App() {
     <div>
      <h1 className="text-red-50">Hello!</h1>
      <br/>
+     <Block className='flex'>
+        <Alert />
+        <InputOutlined />
+     </Block>
+    
+   
      <InputOutlined />
      <br />
      <Dropdown

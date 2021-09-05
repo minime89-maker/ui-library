@@ -31,10 +31,10 @@ const Dropdown = ({ children, className, value, onChange, id, standard }) => {
 	}, className)
 
 	return (
-		<div className='relative'>
+		<div className='relative w-full'>
 			{children && <div className={className}>{children}</div>}
 				<option aria-label={value} className={`text-gray-50 text-xs absolute left-0 m-1 px-0.5 -top-3 bg-white`} value={value}>Select a Player:</option>
-				<select className={`${classes} h-10`} onChange={onChange} name={id} id={id}>
+				<select className={`${classes} h-10 w-full`} onChange={onChange} name={id} id={id}>
 					{players && players.map((player) => {
 						return (
 							<option className='text-gray-80' key={player.id} value={player.value}>{player.name}</option>

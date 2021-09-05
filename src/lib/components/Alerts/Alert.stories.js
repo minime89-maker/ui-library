@@ -20,7 +20,7 @@ Standard.args = {
 	size: 'medium',
 }
 
-const Groups = () => {
+const Template2 = () => {
 	return (
 		<div className='flex flex-col items-center justify-center'>
 			<Alert type="primary" label="This is a small Alert!" size="small" />
@@ -31,4 +31,4 @@ const Groups = () => {
 		</div>
 	)
 }
-export const GroupsAlert = Groups.bind({})
+export const Sizes = Template2.bind({})

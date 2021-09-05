@@ -20,10 +20,16 @@ Standard.args = {
 	size: 'medium',
 	disabled: false,
 }
- 
 
-export const Icon = Template.bind({});
-Icon.args = {
-  icon: <Email24 />,
-  children: 'SEND'
+const Template2 = () => {
+  return (
+    <div className=" flex flex-col items-center justify-center">
+      <Button variant="primary" icon={<Email24 />} size="small" disabled={false} />
+      <br />
+      <Button variant="primary" icon={<Email24 />}  size="medium" disabled={false} />
+      <br />
+      <Button variant="primary" icon={<Email24 />}  size="large" disabled={false} />
+    </div>
+  )
 }
+export const Sizes = Template2.bind({}); 

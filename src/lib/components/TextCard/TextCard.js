@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import Block from '../Block/Block'
 
  const TextCard = ({ title, subtitle, description, action, children, className, intro, source }) => {
 	return (
-		<>
+		<Block className='p-4'>
 			{children && <div className={className}>{children}</div>}
-			<div className='py-4 px-4 w-80 rounded-default shadow-md '>
+
 				<p className='uppercase weight-light text-gray-70 text-body1'>{intro}</p>
 				<p className=' text-h3 pb-2'>{title}</p>
 				<p className='text-gray-60 italic text-body pb-3 break-words'>{subtitle}</p>
@@ -13,8 +14,7 @@ import React from 'react'
 				<div className='mt-4 uppercase text-purple-60 font-semibold'>
 					<a href={source} target='_blank'>{action}</a>
 				</div>
-			</div>
-		</>
+		</Block>
 	)
 }
 

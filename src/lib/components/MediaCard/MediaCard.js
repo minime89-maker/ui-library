@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import Block from '../Block/Block'
 
  const MediaCard = ({ intro, title, subtitle, description, action, media, children, className, source }) => {
 	return (
-		<>
+		<Block className='pb-2'>
 			{children && <div className={className}>{children}</div>}
-			<div className='w-1/2 rounded-default shadow-md overflow-hidden'>
-				<div className='w-full rounded-b-none'>
-					<img src={media} alt='Super Mario' />
+				<div className='w-full rounded-b-none overflow-hidden'>
+					<img src={media}  alt='Super Mario' />
 				</div>
 				<div className='py-4 px-4'>
 					<p className='uppercase weight-light text-gray-70 text-body1 pt-2'>{intro}</p>
@@ -18,9 +18,7 @@ import React from 'react'
 				<div className='flex justify-end m-4 text-purple-60 font-semibold'>
 					<a href={source} target='_blank'>{action}</a>
 				</div>
-			</div>
-
-		</>
+		</Block>
 	)
 }
 

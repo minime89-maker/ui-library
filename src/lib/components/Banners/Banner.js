@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import  Button  from '../Buttons/Button'
 import React from 'react'
+import Block from '../Block/Block'
 
 
  const Banner = ({ image, children, className, cta, title, description }) => {
@@ -12,7 +13,7 @@ import React from 'react'
 				<p className='text-h4 text-gray-10 pb-20 italic'>{description}</p>
 			</div>
 			<div>
-				{cta || <Button variant='primary'/>}
+				{cta || <Button variant='error'>PLAY NOW</Button>}
 			</div>
 		</div>
 	)
