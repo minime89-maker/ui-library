@@ -11,7 +11,7 @@ import Block from '../Block/Block'
 				<p className=' text-h3 pb-2'>{title}</p>
 				<p className='text-gray-60 italic text-body pb-3 break-words'>{subtitle}</p>
 				<p className=' text-gray-60 text-body pb-3 weight-light'>{description}</p>
-				<div className='mt-4 uppercase text-purple-60 font-semibold'>
+				<div className='mt-4 uppercase text-purple-50 font-semibold'>
 					<a href={source} target='_blank'>{action}</a>
 				</div>
 		</Block>
