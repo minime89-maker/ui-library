@@ -13,13 +13,13 @@ const Button = ({ className, variant, children, size, disabled, focus, hover, st
 		focus,
 		size,
 		hover,
-		{ 'bg-gray-10 text-gray-80': color === 'white' },
+		{ 'bg-gray-10 text-gray-80': color === 'white' },className
 		)
 
 	return (
 		<>
-			<button onClick={onClick} disabled={disabled} onFocus={onFocus}  style={style} onBlur={onBlur} className={`${classes} ${className} `}>{children || 'BUTTON'} 
-			{icon && <div className='ml-2 '>{icon}</div>}
+			<button onClick={onClick} disabled={disabled} onFocus={onFocus}  style={style} onBlur={onBlur} className={`${classes}`}>{children || 'BUTTON'} 
+			{icon && <div className='ml-2'>{icon}</div>}
 			</button>
 		</>
 
@@ -29,7 +29,7 @@ const Button = ({ className, variant, children, size, disabled, focus, hover, st
 Button.propTypes = {
 	children: PropTypes.node,
 	variant: PropTypes.oneOf([
-		'btn', 'link', 'primary', 'secondary', 'success', 'warning', 'error'
+		'btn', 'link', 'primary', 'secondary', 'success', 'warning', 'error', 'ghost'
 	]),
 	className: PropTypes.string,
 	onClick: PropTypes.func,

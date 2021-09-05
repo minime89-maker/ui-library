@@ -7,7 +7,7 @@ import { Email24 } from '@carbon/icons-react'
 
 const Subscribe = ({ children, onSubmit, className, title, description }) => {
 	return (
-		<Block className='py-8 px-4'>
+		<Block className='py-8 px-6'>
 			{children && <div className={className}>{children}</div>}
 			<form method="post" onSubmit={onSubmit} className='text-center flex items-center justify-center flex-col'>
 				<h2 className='text-h1 font-semibold'>{title}</h2>
@@ -15,7 +15,7 @@ const Subscribe = ({ children, onSubmit, className, title, description }) => {
 				<p className='text-body text-gray-60'>{description}</p>
 				<br />
 				<br />
-				<InputOutlined blue />
+				<InputOutlined />
 				<br />
 				<br />
 				<br />

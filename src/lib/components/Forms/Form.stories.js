@@ -3,18 +3,15 @@ import  Form  from './Form'
 import Subscribe from './Subscribe'
 
 export default {
-	title: 'Example/Template',
+	title: 'Example/Forms',
 	component: Form,
 	parameters: {
 		design: {
 			type: 'figma',
-			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=121%3A52'
+			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=134%3A68'
 		}
 	}
 }
-
-const Template = (args) => <Form />
-export const ContactUs = Template.bind(null)
 
 const Template2 = (args) => <Subscribe {...args} />
 export const SubscribeForm = Template2.bind({})
@@ -23,3 +20,6 @@ SubscribeForm.args = {
 	description: 'Subscribe to our newsletter to recive product announcements.',
 	
 }
+
+const Template = (args) => <Form />
+export const ContactUs = Template.bind({})

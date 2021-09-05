@@ -1,6 +1,6 @@
 import React from 'react'
 import  Button  from './Button'
-import { Email24 } from '@carbon/icons-react'
+import { Bee24 } from '@carbon/icons-react'
 
 export default {
   title: 'Example / Buttons',
@@ -24,11 +24,11 @@ Standard.args = {
 const Template2 = () => {
   return (
     <div className=" flex flex-col items-center justify-center">
-      <Button variant="primary" icon={<Email24 />} size="small" disabled={false} />
+      <Button variant="primary" icon={<Bee24 />} size="small" disabled={false} />
       <br />
-      <Button variant="primary" icon={<Email24 />}  size="medium" disabled={false} />
+      <Button variant="primary" icon={<Bee24 />}  size="medium" disabled={false} />
       <br />
-      <Button variant="primary" icon={<Email24 />}  size="large" disabled={false} />
+      <Button variant="primary" icon={<Bee24 />}  size="large" disabled={false} />
     </div>
   )
 }

@@ -3,7 +3,7 @@ import { Close16 } from '@carbon/icons-react'
 import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
-const Label = ({ type, label, children, className }) => {
+const Badge = ({ type, label, children, className }) => {
 
 const classes = classnames(`label ${type} ${label} ${className}`)
 
@@ -19,7 +19,7 @@ const classes = classnames(`label ${type} ${label} ${className}`)
 	)
 }
 
-Label.propTypes = {
+Badge.propTypes = {
 	type: PropTypes.oneOf(['label','primary','secondary', 'success', 'warning', 'error']).isRequired,
 	label: PropTypes.string.isRequired,
 	children: PropTypes.node,
@@ -28,9 +28,9 @@ Label.propTypes = {
 	className: PropTypes.string
 }
 
-Label.defaultProps = {
+Badge.defaultProps = {
 	type: 'label',
 	label: 'label'
 }
 
-export default Label
+export default Badge
