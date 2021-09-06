@@ -7,9 +7,9 @@ import React from 'react'
 	return (
 		<div className='w-max relative'>
 			{children && <div className={className}>{children}</div>}
-			<img src={image} alt="Mario" className='w-20 h-20 rounded-full shadow-md border-2 border-gray-30 object-cover'  />
+			<img src={image} alt="Mario" className='w-16 h-16 rounded-full shadow-md border-2 border-gray-30 object-cover'  />
 			<div>
-				{badge && <div className="w-4 h-4 bg-purple-60 border border-white absolute right-0 top-2 rounded-full animate-bounce">{badge}</div>}
+				{badge && <div className="w-3 h-3 bg-green-60 border border-white absolute right-0 top-2 rounded-full animate-bounce">{badge}</div>}
 			</div>
 		</div>
 	)

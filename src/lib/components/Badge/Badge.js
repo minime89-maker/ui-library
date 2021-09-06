@@ -5,23 +5,23 @@ import classnames from 'classnames'
 
 const Badge = ({ type, label, children, className }) => {
 
-const classes = classnames(`label ${type} ${label} ${className}`)
+const classes = classnames(`badge ${type} ${label} ${className}`)
 
 	return (
 			<div className={classes}>
-				<div className='pr-2'>
+				<div className='capitalize'>
 					{label}
 				</div>
 				<div className='cursor-pointer'>
-				{!children ? label && <Close16 /> : children && <Close16 />}
+				{!children ? <Close16 /> : children}
 				</div>
 			</div>
 	)
 }
 
 Badge.propTypes = {
-	type: PropTypes.oneOf(['label','primary','secondary', 'success', 'warning', 'error']).isRequired,
-	label: PropTypes.string.isRequired,
+	type: PropTypes.oneOf(['label','primary','secondary', 'success', 'warning', 'error']),
+	label: PropTypes.string,
 	children: PropTypes.node,
 	onClick: PropTypes.func,
 	onChange: PropTypes.func,
@@ -29,8 +29,9 @@ Badge.propTypes = {
 }
 
 Badge.defaultProps = {
+	children: null,
 	type: 'label',
-	label: 'label'
+	label: ''
 }
 
 export default Badge

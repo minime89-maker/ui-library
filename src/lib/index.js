@@ -13,9 +13,9 @@ import TextArea from './components/TextAreas/TextArea'
 import TextAreaOutlined from './components/TextAreas/TextAreaOutlined'
 import TextCard from './components/TextCard/TextCard'
 import Link from './components/Links/Link'
-import Label from './components/Labels/Label'
+import Badge from './components/Badge/Badge'
 import AvatarGroup from './components/Avatars/AvatarGroup'
 import Block from './components/Block/Block'
 import Subscribe from './components/Forms/Subscribe'
 
-export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutlined, MediaCard, Radio, TextArea, TextAreaOutlined, TextCard, Link, Label, AvatarGroup, Block, Subscribe }
+export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutlined, MediaCard, Radio, TextArea, TextAreaOutlined, TextCard, Link, Badge, AvatarGroup, Block, Subscribe }

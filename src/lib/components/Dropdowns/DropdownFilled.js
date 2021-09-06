@@ -27,7 +27,7 @@ const players = [{
 
 const DropdownFilled = ({ children, className, value, onChange, id, filled }) => {
 	const classes = cn({
-		'border-b-2 border-gray-30 bg-gray-10 focus:outline-none focus:border-red': filled
+		'border-b-2 border-gray-30 bg-gray-10 focus:outline-none focus:border-blue': filled
 	}, className)
 
 	return (

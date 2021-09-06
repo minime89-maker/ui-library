@@ -14,8 +14,8 @@ import PropTypes from 'prop-types'
 			disabled={disabled} value={value}
 			onChange={onChange}
 			checked={checked} 
-			className={`${disabled === true ? 'cursor-not-allowed' : 'auto' } h-4 w-4`}
-			/>			
+			className={`${disabled === true ? 'cursor-not-allowed' : 'auto' } h-4 w-4 focus:apperance-none`}
+			/>
 		</div>
 	)
 }
