@@ -23,7 +23,7 @@ var TextAreaOutlined = function TextAreaOutlined(_ref) {
       maxLength = _ref.maxLength,
       onChange = _ref.onChange;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "".concat(className, " relative w-max")
+    className: "".concat(className, " relative w-full")
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
@@ -37,7 +37,7 @@ var TextAreaOutlined = function TextAreaOutlined(_ref) {
     placeholder: placeholder,
     onChange: onChange,
     maxLength: maxLength,
-    className: "p-2 rounded-default border-2 border-gray-30 placeholder-gray-30 text-gray-80 focus:outline-none focus:border-red"
+    className: "p-2 w-full rounded-default border-2 border-gray-30 placeholder-gray-30 text-gray-80 focus:outline-none focus:border-blue"
   }));
 };
 

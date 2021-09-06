@@ -15,32 +15,33 @@ var _classnames = _interopRequireDefault(require("classnames"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Label = function Label(_ref) {
+var Badge = function Badge(_ref) {
   var type = _ref.type,
       label = _ref.label,
       children = _ref.children,
       className = _ref.className;
-  var classes = (0, _classnames.default)("label ".concat(type, " ").concat(label, " ").concat(className));
+  var classes = (0, _classnames.default)("badge ".concat(type, " ").concat(label, " ").concat(className));
   return /*#__PURE__*/_react.default.createElement("div", {
     className: classes
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "pr-2"
+    className: "capitalize"
   }, label), /*#__PURE__*/_react.default.createElement("div", {
-    className: "cursor-pointer"
-  }, !children ? label && /*#__PURE__*/_react.default.createElement(_iconsReact.Close16, null) : children && /*#__PURE__*/_react.default.createElement(_iconsReact.Close16, null)));
+    className: "cursor-pointer px-auto"
+  }, !children ? /*#__PURE__*/_react.default.createElement(_iconsReact.Close16, null) : children));
 };
 
-Label.propTypes = {
-  type: _propTypes.default.oneOf(['label', 'primary', 'secondary', 'success', 'warning', 'error']).isRequired,
-  label: _propTypes.default.string.isRequired,
+Badge.propTypes = {
+  type: _propTypes.default.oneOf(['label', 'primary', 'secondary', 'success', 'warning', 'error']),
+  label: _propTypes.default.string,
   children: _propTypes.default.node,
   onClick: _propTypes.default.func,
   onChange: _propTypes.default.func,
   className: _propTypes.default.string
 };
-Label.defaultProps = {
+Badge.defaultProps = {
+  children: null,
   type: 'label',
-  label: 'label'
+  label: ''
 };
-var _default = Label;
+var _default = Badge;
 exports.default = _default;

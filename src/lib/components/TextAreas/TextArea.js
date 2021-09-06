@@ -3,7 +3,7 @@ import React from 'react'
 
  const TextArea = ({ children, className, name, id, cols, rows, placeholder, required, onChange, label, maxLength }) => {
 	return (
-		<div>
+		<>
 			<div className={`${className} relative w-full`}>
 				{children && <div className={className}>{children}</div>}
 				{label && <label className='absolute left-0 mt-1 bg-transparent -top-5 text-gray-60 text-xs  
@@ -12,7 +12,7 @@ import React from 'react'
 					onChange={onChange}
 					maxLength={maxLength} className='px-2 py-3 w-full   border-b-2 bg-gray-10 border-gray-30 text-gray-80 placeholder-gray-30 focus:outline-none focus:border-blue' ></textarea>
 			</div>
-		</div>
+		</>
 	)
 }
 

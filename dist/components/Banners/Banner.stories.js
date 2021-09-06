@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.BannerBasic = exports.default = void 0;
+exports.BannerExample = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -21,5 +21,5 @@ var Template = function Template(args) {
   return /*#__PURE__*/_react.default.createElement(_Banner.default, args);
 };
 
-var BannerBasic = Template.bind(null);
-exports.BannerBasic = BannerBasic;
+var BannerExample = Template.bind(null);
+exports.BannerExample = BannerExample;

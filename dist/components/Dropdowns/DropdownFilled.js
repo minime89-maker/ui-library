@@ -39,17 +39,17 @@ var DropdownFilled = function DropdownFilled(_ref) {
       id = _ref.id,
       filled = _ref.filled;
   var classes = (0, _classnames.default)({
-    'border-b-2 border-gray-30 bg-gray-10 focus:outline-none focus:border-red': filled
+    'border-b-2 border-gray-30 bg-gray-10 focus:outline-none focus:border-blue': filled
   }, className);
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "relative"
+    className: "relative w-full"
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("option", {
     className: "text-gray-50 text-xs absolute left-0 m-1 -top-5",
     value: value
   }, "Select a Player:"), /*#__PURE__*/_react.default.createElement("select", {
-    className: "".concat(classes, " h-10"),
+    className: "".concat(classes, " h-10 w-full"),
     onChange: onChange,
     name: id,
     id: id

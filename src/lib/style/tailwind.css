@@ -52,7 +52,7 @@
 	@apply text-purple-50 
 }
 .link{
-	@apply border-0 shadow-none text-purple-50 focus:text-gray-80
+	@apply border-0 shadow-none text-purple-50 focus:text-gray-80 hover:bg-transparent
 }
 .primary {
 	@apply bg-blue-60 border-0 text-gray-10 hover:bg-blue-70 focus:shadow-md 

@@ -15,6 +15,14 @@ var _classnames = _interopRequireDefault(require("classnames"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var signs = {
+  primary: /*#__PURE__*/_react.default.createElement(_iconsReact.Information24, null),
+  secondary: /*#__PURE__*/_react.default.createElement(_iconsReact.WarningFilled24, null),
+  warning: /*#__PURE__*/_react.default.createElement(_iconsReact.WarningAlt24, null),
+  success: /*#__PURE__*/_react.default.createElement(_iconsReact.CheckmarkOutline24, null),
+  error: /*#__PURE__*/_react.default.createElement(_iconsReact.MisuseOutline24, null)
+};
+
 var Alert = function Alert(_ref) {
   var type = _ref.type,
       children = _ref.children,
@@ -27,10 +35,12 @@ var Alert = function Alert(_ref) {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("div", {
-    className: "".concat(classes, " "),
+    className: "".concat(classes, " opacity-80"),
     size: size
-  }, label, /*#__PURE__*/_react.default.createElement("div", {
-    className: "pl-4 cursor-pointer",
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "pr-1"
+  }, signs[type]), label, /*#__PURE__*/_react.default.createElement("div", {
+    className: "pl-8 cursor-pointer",
     onClick: onClick
   }, !icon ? /*#__PURE__*/_react.default.createElement(_iconsReact.Close24, null) : icon)));
 };

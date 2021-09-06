@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Icon = exports.Standard = exports.default = void 0;
+exports.Sizes = exports.Standard = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -36,9 +36,27 @@ Standard.args = {
   size: 'medium',
   disabled: false
 };
-var Icon = Template.bind({});
-exports.Icon = Icon;
-Icon.args = {
-  icon: /*#__PURE__*/_react.default.createElement(_iconsReact.Email24, null),
-  children: 'SEND'
+
+var Template2 = function Template2() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: " flex flex-col items-center justify-center"
+  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+    variant: "primary",
+    icon: /*#__PURE__*/_react.default.createElement(_iconsReact.Bee24, null),
+    size: "small",
+    disabled: false
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Button.default, {
+    variant: "primary",
+    icon: /*#__PURE__*/_react.default.createElement(_iconsReact.Bee24, null),
+    size: "medium",
+    disabled: false
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Button.default, {
+    variant: "primary",
+    icon: /*#__PURE__*/_react.default.createElement(_iconsReact.Bee24, null),
+    size: "large",
+    disabled: false
+  }));
 };
+
+var Sizes = Template2.bind({});
+exports.Sizes = Sizes;

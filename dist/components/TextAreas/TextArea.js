@@ -23,8 +23,8 @@ var TextArea = function TextArea(_ref) {
       onChange = _ref.onChange,
       label = _ref.label,
       maxLength = _ref.maxLength;
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
-    className: "".concat(className, " relative w-max")
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "".concat(className, " relative w-full")
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
@@ -38,7 +38,7 @@ var TextArea = function TextArea(_ref) {
     placeholder: placeholder,
     onChange: onChange,
     maxLength: maxLength,
-    className: "px-2 py-3  border-b-2 bg-gray-10 border-gray-30 text-gray-80 placeholder-gray-30 focus:outline-none focus:border-red"
+    className: "px-2 py-3 w-full   border-b-2 bg-gray-10 border-gray-30 text-gray-80 placeholder-gray-30 focus:outline-none focus:border-blue"
   })));
 };
 

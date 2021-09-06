@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Standard = exports.default = void 0;
+exports.Sizes = exports.Standard = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -34,3 +34,24 @@ Standard.args = {
   label: 'This is a Alert!',
   size: 'medium'
 };
+
+var Template2 = function Template2() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "flex flex-col items-center justify-center"
+  }, /*#__PURE__*/_react.default.createElement(_Alert.default, {
+    type: "primary",
+    label: "This is a small Alert!",
+    size: "small"
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Alert.default, {
+    type: "primary",
+    label: "This is a medium Alert!",
+    size: "medium"
+  }), /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement(_Alert.default, {
+    type: "primary",
+    label: "This is a large Alert!",
+    size: "large"
+  }));
+};
+
+var Sizes = Template2.bind({});
+exports.Sizes = Sizes;

@@ -30,7 +30,7 @@ Input.propTypes = {
 	onFocus: PropTypes.func,
 	onBlur: PropTypes.func,
 	blue: PropTypes.bool,
-	required: PropTypes.bool,
+	required: PropTypes.oneOf(true, false)
 }
 
 Input.defaultProps = {

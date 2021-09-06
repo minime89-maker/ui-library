@@ -21,7 +21,7 @@ var Banner = function Banner(_ref) {
       title = _ref.title,
       description = _ref.description;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "py-8 px-4 rounded-default ",
+    className: " w-screen py-10 px-14 ",
     style: {
       backgroundImage: "url(".concat(image, ")"),
       width: '100%',
@@ -38,9 +38,15 @@ var Banner = function Banner(_ref) {
     className: "text-h1 text-gray-10 pb-4 font-semibold"
   }, title), /*#__PURE__*/_react.default.createElement("p", {
     className: "text-h4 text-gray-10 pb-20 italic"
-  }, description)), /*#__PURE__*/_react.default.createElement("div", null, cta || /*#__PURE__*/_react.default.createElement(_Button.default, {
-    variant: "primary"
-  })));
+  }, description)), /*#__PURE__*/_react.default.createElement("div", {
+    className: "flex items-center justify-start"
+  }, /*#__PURE__*/_react.default.createElement("a", {
+    href: "https://www.mastercard.com/global/en.html",
+    className: "text-gray-20 text-body hover:underline mr-14"
+  }, "Paying with Credit Card ?"), cta || /*#__PURE__*/_react.default.createElement(_Button.default, {
+    variant: "error",
+    size: "large"
+  }, "PAY NOW")));
 };
 
 Banner.propTypes = {
@@ -52,12 +58,12 @@ Banner.propTypes = {
   description: _propTypes.default.string
 };
 Banner.defaultProps = {
-  image: 'https://images7.alphacoders.com/331/331539.png',
+  image: 'https://images.unsplash.com/photo-1584476509080-54a2c8df05ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
   children: null,
   className: '',
   cta: null,
-  title: 'Super Mario',
-  description: 'Super Mario is a video game developed by Nintendo and published by Nintendo.'
+  title: 'Cash Register',
+  description: 'A cash register, sometimes called a till or automated money handling system, is a mechanical or electronic device for registering and calculating transactions at a point of sale. '
 };
 var _default = Banner;
 exports.default = _default;

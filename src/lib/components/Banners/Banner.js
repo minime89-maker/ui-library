@@ -1,20 +1,19 @@
 import PropTypes from 'prop-types'
 import  Button  from '../Buttons/Button'
 import React from 'react'
-import Block from '../Block/Block'
 
 
  const Banner = ({ image, children, className, cta, title, description }) => {
 	return (
-		<div className=' w-screen py-8 px-4 rounded-default ' style={{backgroundImage:`url(${image})`, width: '100%', height: '100%', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+		<div className=' w-screen py-10 px-14 ' style={{backgroundImage:`url(${image})`, width: '100%', height: '100%', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center'}}>
 			{children && <div className={className}>{children}</div>}
 			<div className='w-1/2 text-left'>
 				<p className='text-h1 text-gray-10 pb-4 font-semibold'>{title}</p>
 				<p className='text-h4 text-gray-10 pb-20 italic'>{description}</p>
 			</div>
 			<div className='flex items-center justify-start'>
-				{cta || <Button variant='primary'>PAY NOW</Button>}
-			    <p className='text-gray-40 text-body1 underline ml-4'>Paying with Credit Card ?</p>
+			    <a href='https://www.mastercard.com/global/en.html' className='text-gray-20 text-body hover:underline mr-14'>Paying with Credit Card ?</a>
+				{cta || <Button variant='error' size='large'>PAY NOW</Button>}
 			</div>
 		</div>
 	)

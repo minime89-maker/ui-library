@@ -9,6 +9,8 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Block = _interopRequireDefault(require("../Block/Block"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var TextCard = function TextCard(_ref) {
@@ -20,11 +22,11 @@ var TextCard = function TextCard(_ref) {
       className = _ref.className,
       intro = _ref.intro,
       source = _ref.source;
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_Block.default, {
+    className: "p-4"
+  }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
-  }, children), /*#__PURE__*/_react.default.createElement("div", {
-    className: "py-4 px-4 w-80 rounded-default shadow-md "
-  }, /*#__PURE__*/_react.default.createElement("p", {
+  }, children), /*#__PURE__*/_react.default.createElement("p", {
     className: "uppercase weight-light text-gray-70 text-body1"
   }, intro), /*#__PURE__*/_react.default.createElement("p", {
     className: " text-h3 pb-2"
@@ -33,11 +35,11 @@ var TextCard = function TextCard(_ref) {
   }, subtitle), /*#__PURE__*/_react.default.createElement("p", {
     className: " text-gray-60 text-body pb-3 weight-light"
   }, description), /*#__PURE__*/_react.default.createElement("div", {
-    className: "mt-4 uppercase text-purple-60 font-semibold"
+    className: "mt-4 uppercase text-purple-50 font-semibold"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: source,
     target: "_blank"
-  }, action))));
+  }, action)));
 };
 
 TextCard.propTypes = {
@@ -53,7 +55,7 @@ TextCard.propTypes = {
 TextCard.defaultProps = {
   title: 'Cafe Luigi',
   subtitle: 'Italian restaurant',
-  description: 'Small plates, salads & sandwiches an intimate setting with 12 indoor seats plus pation seating.',
+  description: 'Small plates, salads & sandwiches an intimate setting with 12 indoor seats.',
   action: 'Book a Table',
   source: 'https://www.google.com',
   children: null,

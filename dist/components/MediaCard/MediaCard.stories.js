@@ -13,7 +13,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _default = {
   title: 'Example/Cards',
-  component: _MediaCard.default
+  component: _MediaCard.default,
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=145%3A580'
+    }
+  }
 };
 exports.default = _default;
 

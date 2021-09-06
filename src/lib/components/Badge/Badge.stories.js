@@ -21,3 +21,12 @@ Standard.args = {
 	label: 'label'
 }
 
+const Template2 = () => <div className="space-y-2">
+	<Badge type='label' label='label' />
+	<Badge type='primary' label='label' />
+	<Badge type='secondary' label='label' />
+	<Badge type='success' label='label' />
+	<Badge type='warning' label='label' />
+	<Badge type='error' label='label' />
+</div>
+export const Group = Template2.bind({})

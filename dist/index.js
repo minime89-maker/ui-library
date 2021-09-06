@@ -87,16 +87,28 @@ Object.defineProperty(exports, "Link", {
     return _Link.default;
   }
 });
-Object.defineProperty(exports, "Label", {
+Object.defineProperty(exports, "Badge", {
   enumerable: true,
   get: function get() {
-    return _Label.default;
+    return _Badge.default;
   }
 });
 Object.defineProperty(exports, "AvatarGroup", {
   enumerable: true,
   get: function get() {
     return _AvatarGroup.default;
+  }
+});
+Object.defineProperty(exports, "Block", {
+  enumerable: true,
+  get: function get() {
+    return _Block.default;
+  }
+});
+Object.defineProperty(exports, "Subscribe", {
+  enumerable: true,
+  get: function get() {
+    return _Subscribe.default;
   }
 });
 
@@ -130,8 +142,12 @@ var _TextCard = _interopRequireDefault(require("./components/TextCard/TextCard")
 
 var _Link = _interopRequireDefault(require("./components/Links/Link"));
 
-var _Label = _interopRequireDefault(require("./components/Labels/Label"));
+var _Badge = _interopRequireDefault(require("./components/Badge/Badge"));
 
 var _AvatarGroup = _interopRequireDefault(require("./components/Avatars/AvatarGroup"));
+
+var _Block = _interopRequireDefault(require("./components/Block/Block"));
+
+var _Subscribe = _interopRequireDefault(require("./components/Forms/Subscribe"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
