@@ -13,8 +13,8 @@
 .alert {
 	@apply py-2 px-4 flex text-body items-center justify-between border w-max rounded-default shadow-md ;
 }
-.label{
-	@apply py-1 px-2.5 flex items-center justify-between w-max rounded-round  uppercase text-body1 shadow-md bg-gray-10 text-gray-60 font-semibold;
+.badge{
+	@apply py-0.5 px-2 flex italic items-center justify-between w-max rounded-default capitalize text-body1 shadow-md bg-gray-10 text-gray-60 font-semibold;
 }
 .card{
 	@apply py-4 px-8 flex items-center justify-between flex-col flex-wrap shadow-md rounded-default  sm:min-w-min sm:max-w-sm md:min-w-min md:max-w-sm lg:min-w-min lg:max-w-md
@@ -23,7 +23,7 @@
 	text-left
 }
 .btn{
-	@apply py-2 px-4 w-max rounded-default shadow-md flex text-center border capitalize font-semibold focus:bg-gray-20 
+	@apply py-1.5 px-4 w-max rounded-default shadow-md flex text-center border capitalize font-semibold hover:bg-gray-20 
 }
 .input-primary{
 	@apply py-2 px-4 placeholder-gray-30 border border-gray-30 focus:ring focus:outline-none
@@ -55,26 +55,26 @@
 	@apply border-0 shadow-none text-purple-50 focus:text-gray-80
 }
 .primary {
-	@apply bg-blue-50 border-0 text-gray-10 focus:bg-blue-70 focus:shadow-md 
+	@apply bg-blue-60 border-0 text-gray-10 hover:bg-blue-70 focus:shadow-md 
 }
 .secondary {
-	@apply bg-gray-50 border-0 text-gray-10
-	focus:bg-gray-80 focus:shadow-md 
+	@apply bg-gray-60 border-0 text-gray-10
+	hover:bg-gray-70 focus:shadow-md 
 }
 .success {
 	@apply bg-green-50 border-0 text-gray-10
-	focus:bg-green-60 focus:shadow-md
+	hover:bg-green-60 focus:shadow-md
 }
 .warning {
-	@apply bg-yellow-50 border-0 text-gray-10
-	focus:bg-yellow-50 focus:shadow-md
+	@apply bg-yellow-30 border-0 text-gray-10
+	hover:bg-yellow-40 focus:shadow-md
 }
 .error {
 	@apply bg-red-50 border-0 text-white
-	focus:bg-red-70 focus:shadow-md
+	hover:bg-red-60 focus:shadow-md
 }
 .ghost{
-	@apply bg-gray-10 border-0 text-gray-60 focus:shadow-md
+	@apply bg-gray-10 border-0 text-gray-60 hover:shadow-md
 }
 .small {
 	@apply text-body py-1 px-2

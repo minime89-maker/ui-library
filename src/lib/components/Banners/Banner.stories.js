@@ -7,4 +7,4 @@ export default {
 }
 
 const Template = (args) => <Banner {...args} />
-export const BannerBasic = Template.bind(null)
+export const BannerExample = Template.bind(null)
