@@ -42,7 +42,7 @@ var Dropdown = function Dropdown(_ref) {
     'rounded-default px-2 border-2 bg-transparent border-gray-30 text-gray-80 focus:outline-none focus:border-red': standard
   }, className);
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "relative"
+    className: "relative w-full"
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("option", {
@@ -50,7 +50,7 @@ var Dropdown = function Dropdown(_ref) {
     className: "text-gray-50 text-xs absolute left-0 m-1 px-0.5 -top-3 bg-white",
     value: value
   }, "Select a Player:"), /*#__PURE__*/_react.default.createElement("select", {
-    className: "".concat(classes, " h-10"),
+    className: "".concat(classes, " h-10 w-full"),
     onChange: onChange,
     name: id,
     id: id

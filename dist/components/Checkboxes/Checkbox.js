@@ -37,7 +37,7 @@ var Checkbox = function Checkbox(_ref) {
     value: value,
     onChange: onChange,
     checked: checked,
-    className: "".concat(disabled === true ? 'cursor-not-allowed' : 'auto', " h-4 w-4")
+    className: "".concat(disabled === true ? 'cursor-not-allowed' : 'auto', " h-4 w-4 focus:apperance-none")
   }));
 };
 

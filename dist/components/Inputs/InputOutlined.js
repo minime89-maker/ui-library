@@ -22,9 +22,10 @@ var InputOutlined = function InputOutlined(_ref) {
       name = _ref.name,
       label = _ref.label,
       onFocus = _ref.onFocus,
-      onBlur = _ref.onBlur;
+      onBlur = _ref.onBlur,
+      required = _ref.required;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "w-max relative"
+    className: "w-full relative"
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
@@ -40,7 +41,8 @@ var InputOutlined = function InputOutlined(_ref) {
     id: id,
     name: name,
     onChange: onChange,
-    className: "rounded-default px-2 h-10 w-full border-2 border-gray-30 text-gray-80 focus:outline-none focus:border-red"
+    required: required,
+    className: "w-full rounded-default px-2 h-10 border-2 border-gray-30 text-gray-80 focus:outline-none focus:border-blue"
   }));
 };
 
@@ -55,14 +57,16 @@ InputOutlined.propTypes = {
   name: _propTypes.default.string,
   label: _propTypes.default.string,
   onFocus: _propTypes.default.func,
-  onBlur: _propTypes.default.func
+  onBlur: _propTypes.default.func,
+  required: _propTypes.default.bool
 };
 InputOutlined.defaultProps = {
   placeholder: '',
   disabled: false,
-  type: 'password',
+  type: 'text',
   onChange: function onChange() {},
-  label: 'Password'
+  label: 'Email Address',
+  required: true
 };
 var _default = InputOutlined;
 exports.default = _default;

@@ -17,6 +17,8 @@ var _Button = _interopRequireDefault(require("../Buttons/Button"));
 
 var _iconsReact = require("@carbon/icons-react");
 
+var _Block = _interopRequireDefault(require("../Block/Block"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Form = function Form(_ref) {
@@ -28,14 +30,16 @@ var Form = function Form(_ref) {
     alert('Submiting Form');
   };
 
-  return /*#__PURE__*/_react.default.createElement("form", {
+  return /*#__PURE__*/_react.default.createElement(_Block.default, {
+    className: "py-4 text-center"
+  }, /*#__PURE__*/_react.default.createElement("form", {
     method: "POST",
     onSubmit: handleSubmit,
-    className: "shadow w-max py-4 px-8 rounded-defaul"
+    className: "m-4"
   }, children && /*#__PURE__*/_react.default.createElement("form", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("p", {
-    className: "text-h2 mb-8 font-semibold"
+    className: "text-h1 mb-8 font-semibold"
   }, "Contact Us"), /*#__PURE__*/_react.default.createElement(_InputOutlined.default, {
     type: "text",
     label: "First Name"
@@ -48,8 +52,9 @@ var Form = function Form(_ref) {
     className: "mb-4"
   }), /*#__PURE__*/_react.default.createElement(_Button.default, {
     variant: "error",
+    className: "mx-auto",
     icon: /*#__PURE__*/_react.default.createElement(_iconsReact.Email20, null)
-  }, "SUBMIT"));
+  }, "SUBMIT")));
 };
 
 Form.propTypes = {

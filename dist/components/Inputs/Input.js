@@ -25,14 +25,15 @@ var Input = function Input(_ref) {
       label = _ref.label,
       onFocus = _ref.onFocus,
       onBlur = _ref.onBlur,
-      blue = _ref.blue;
+      blue = _ref.blue,
+      required = _ref.required;
   var classes = (0, _classnames.default)({
     'opacity-50': disabled
-  });
+  }, className);
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "w-max relative"
+    className: "w-full relative"
   }, children && /*#__PURE__*/_react.default.createElement("div", {
-    className: className
+    className: classes
   }, children), label && /*#__PURE__*/_react.default.createElement("label", {
     className: "absolute left-0 -top-4 text-gray-60 text-xs  ",
     htmlFor: id
@@ -46,8 +47,9 @@ var Input = function Input(_ref) {
     name: name,
     onChange: onChange,
     onFocus: onFocus,
+    required: required,
     onBlur: onBlur,
-    className: "".concat(classes, " h-8 px-2 w-full bg-gray-10 border-b-2 border-gray-30 text-gray-80  focus:outline-none focus:border-red")
+    className: "".concat(classes, " h-8 px-2 w-full bg-gray-10 border-b-2 border-gray-30 text-gray-80  focus:outline-none focus:border-blue")
   }));
 };
 
@@ -63,14 +65,16 @@ Input.propTypes = {
   label: _propTypes.default.string,
   onFocus: _propTypes.default.func,
   onBlur: _propTypes.default.func,
-  blue: _propTypes.default.bool
+  blue: _propTypes.default.bool,
+  required: _propTypes.default.oneOf(true, false)
 };
 Input.defaultProps = {
   placeholder: '',
   disabled: false,
   type: 'text',
   onChange: function onChange() {},
-  label: 'Email Address'
+  label: 'Email Address',
+  required: true
 };
 var _default = Input;
 exports.default = _default;

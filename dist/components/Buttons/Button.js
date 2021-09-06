@@ -26,41 +26,41 @@ var Button = function Button(_ref) {
       focus = _ref.focus,
       hover = _ref.hover,
       style = _ref.style,
-      block = _ref.block,
+      full = _ref.full,
       color = _ref.color,
       onClick = _ref.onClick,
       onFocus = _ref.onFocus,
       onBlur = _ref.onBlur,
       icon = _ref.icon;
   var classes = (0, _classnames.default)('btn', variant, {
-    'w-screen text-center justify-center tracking-wide': block
+    'w-full text-center justify-center tracking-wide': full
   }, className, {
     'opacity-50 cursor-not-allowed ': disabled
   }, focus, size, hover, {
     'bg-gray-10 text-gray-80': color === 'white'
-  });
+  }, className);
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("button", {
     onClick: onClick,
     disabled: disabled,
     onFocus: onFocus,
     style: style,
     onBlur: onBlur,
-    className: "".concat(classes, " ").concat(className, " ")
+    className: "".concat(classes)
   }, children || 'BUTTON', "\xA0", icon && /*#__PURE__*/_react.default.createElement("div", {
-    className: "ml-2 "
+    className: "ml-2"
   }, icon)));
 };
 
 Button.propTypes = (_Button$propTypes = {
   children: _propTypes.default.node,
-  variant: _propTypes.default.oneOf(['btn', 'link', 'primary', 'secondary', 'success', 'warning', 'error']),
+  variant: _propTypes.default.oneOf(['btn', 'link', 'primary', 'secondary', 'success', 'warning', 'error', 'ghost']),
   className: _propTypes.default.string,
   onClick: _propTypes.default.func,
   disabled: _propTypes.default.bool,
   href: _propTypes.default.string,
   size: _propTypes.default.string,
   hover: _propTypes.default.bool
-}, _defineProperty(_Button$propTypes, "disabled", _propTypes.default.bool), _defineProperty(_Button$propTypes, "style", _propTypes.default.any), _defineProperty(_Button$propTypes, "block", _propTypes.default.bool), _defineProperty(_Button$propTypes, "color", _propTypes.default.string), _defineProperty(_Button$propTypes, "icon", _propTypes.default.node), _Button$propTypes);
+}, _defineProperty(_Button$propTypes, "disabled", _propTypes.default.bool), _defineProperty(_Button$propTypes, "style", _propTypes.default.any), _defineProperty(_Button$propTypes, "full", _propTypes.default.bool), _defineProperty(_Button$propTypes, "color", _propTypes.default.string), _defineProperty(_Button$propTypes, "icon", _propTypes.default.node), _Button$propTypes);
 Button.defaultProps = {
   variant: 'btn',
   size: 'medium',

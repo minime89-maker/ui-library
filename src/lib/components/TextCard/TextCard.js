@@ -32,7 +32,7 @@ TextCard.propTypes = {
 TextCard.defaultProps = {
 	title: 'Cafe Luigi',
 	subtitle: 'Italian restaurant',
-	description: 'Small plates, salads & sandwiches an intimate setting with 12 indoor seats plus pation seating.',
+	description: 'Small plates, salads & sandwiches an intimate setting with 12 indoor seats.',
 	action: 'Book a Table',
 	source: 'https://www.google.com',
 	children: null,

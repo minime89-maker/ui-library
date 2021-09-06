@@ -12,7 +12,7 @@ const classes = classnames(`badge ${type} ${label} ${className}`)
 				<div className='capitalize'>
 					{label}
 				</div>
-				<div className='cursor-pointer'>
+				<div className='cursor-pointer px-auto'>
 				{!children ? <Close16 /> : children}
 				</div>
 			</div>
