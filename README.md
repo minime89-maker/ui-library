@@ -47,8 +47,9 @@ Minimalistic React UI Library based on Carbon Design Language, implemented with 
 <br />
 <br />
 
-## License
+## npm
 
-<hr>
+![](https://img.shields.io/npm/v/minja-ui)
+![](https://img.shields.io/npm/l/minja-ui)
 
-    Crafted with ❤️ by Minja
+<br />
