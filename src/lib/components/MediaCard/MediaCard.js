@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import Block from '../Block/Block'
 import Button from '../Buttons/Button'
 
  const MediaCard = ({ intro, title, category, description, media, children, className, width, height, image, cardBody, cta}) => {
