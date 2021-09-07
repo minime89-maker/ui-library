@@ -43,7 +43,7 @@ var Showcase = function Showcase() {
   }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "https://www.npmjs.com/package/minja-ui",
     className: "text-gray-80 text-light"
-  }, "version 0.1.11")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
+  }, "version 0.1.12")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("a", {
     href: "https://github.com/minime89-maker"
   }, /*#__PURE__*/_react.default.createElement(_iconsReact.LogoGithub32, null))))), /*#__PURE__*/_react.default.createElement("main", {
     className: "flex items-center justify-center flex-wrap text-center mb-8 xl:justify-around xl:pl-20"
