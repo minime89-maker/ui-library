@@ -37,7 +37,6 @@ Button.propTypes = {
 	href: PropTypes.string,
 	size: PropTypes.string,
 	hover: PropTypes.bool,
-	disabled: PropTypes.bool,
 	style: PropTypes.any,
 	full: PropTypes.bool,
 	color: PropTypes.string,
