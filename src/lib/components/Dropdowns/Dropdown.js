@@ -27,7 +27,7 @@ const players = [{
 
 const Dropdown = ({ children, className, value, onChange, id, standard }) => {
 	const classes = cn({
-		'rounded-default px-2 border-2 bg-transparent border-gray-30 text-gray-80 focus:outline-none focus:border-red': standard,
+		'rounded-default px-2 border-2 bg-transparent border-gray-30 text-gray-80 focus:outline-none focus:border-blue': standard,
 	}, className)
 
 	return (
