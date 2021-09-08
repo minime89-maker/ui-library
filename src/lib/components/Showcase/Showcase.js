@@ -19,7 +19,7 @@ const Showcase = () => {
 			<nav className="px-4">
 				<ul className='flex items-center justify-between'>
 					<li>
-						<a href="https://www.npmjs.com/package/minja-ui" className='text-gray-80 text-light'>version 0.1.12</a>
+						<a href="https://www.npmjs.com/package/minja-ui" className='text-gray-80 text-light'>version 0.1.14</a>
 					</li>
 					<li>
 						<a href="https://github.com/minime89-maker">{<LogoGithub32 />}</a>
