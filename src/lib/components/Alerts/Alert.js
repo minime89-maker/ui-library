@@ -1,7 +1,7 @@
 import React from 'react'
 import { Close24, Information24, CheckmarkOutline24, WarningAlt24, WarningFilled24, MisuseOutline24 } from '@carbon/icons-react'
 import PropTypes from 'prop-types'
-import classnames from 'classnames'
+import cn from 'classnames'
 
 const signs = {
 	primary: <Information24 />,
@@ -14,7 +14,7 @@ const signs = {
 
 const Alert = ({ type, children, label, size, onClick, className, icon }) => {
 
-const classes = classnames(`alert ${type} ${size} ${className}`)
+const classes = cn(`alert ${type} ${size} ${className}`)
 
 	return (
 		<>
