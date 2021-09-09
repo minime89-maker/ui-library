@@ -25,5 +25,4 @@ yarn-error.log*
 # custom
 /dist/style/tailwind.css
 src/lib/components/Grid
-src/lib/components/Breadcrumbs
 tailwind.json

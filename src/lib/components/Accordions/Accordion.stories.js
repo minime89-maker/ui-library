@@ -5,6 +5,12 @@ import Accordion from './Accordion'
 export default {
 	title: 'Example/Accordions',
 	component: AccordionOutlined,
+	parameters: {
+		design: {
+			type: 'figma',
+			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=241%3A208'
+		}
+	}
 }
 
 const Template = (args) => <AccordionOutlined {...args} />
