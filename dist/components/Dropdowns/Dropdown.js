@@ -39,7 +39,7 @@ var Dropdown = function Dropdown(_ref) {
       id = _ref.id,
       standard = _ref.standard;
   var classes = (0, _classnames.default)({
-    'rounded-default px-2 border-2 bg-transparent border-gray-30 text-gray-80 focus:outline-none focus:border-red': standard
+    'rounded-default px-2 border-2 bg-transparent border-gray-30 text-gray-80 focus:outline-none focus:border-blue': standard
   }, className);
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "relative w-full"
