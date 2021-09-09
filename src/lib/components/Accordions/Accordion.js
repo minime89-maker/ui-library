@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Accordion = ({ children, className, label, summary, open }) => {
 
 	return (
-		<div className='w-full'>
+		<div className='w-max'>
 			{children && <div className={className}>{children}</div>}
 			<details className='relative  border-b-2 bg-gray-10 border-gray-30 text-gray-80' open={open}>
 				<summary className="flex items-center flex-row-reverse justify-between p-2 cursor-pointer">
@@ -13,8 +13,8 @@ const Accordion = ({ children, className, label, summary, open }) => {
 					</div>
 					{label || "What's the best thing about Switzerland?"}
 				</summary>
-				<div className='absolute  text-gray-60 mt-2 p-2'>
-				{summary || "I don't know, but the flag is a big plus."}
+				<div className='text-gray-60 mt-2 p-2'>
+					{summary || "I don't know, but the flag is a big plus."}
 				</div>
 			</details>
 		</div>

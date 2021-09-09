@@ -111,16 +111,22 @@ Object.defineProperty(exports, "Subscribe", {
     return _Subscribe.default;
   }
 });
+Object.defineProperty(exports, "Accordion", {
+  enumerable: true,
+  get: function get() {
+    return _Accordion.default;
+  }
+});
 Object.defineProperty(exports, "AccordionOutlined", {
   enumerable: true,
   get: function get() {
     return _AccordionOutlined.default;
   }
 });
-Object.defineProperty(exports, "Accordion", {
+Object.defineProperty(exports, "Breadcrumbs", {
   enumerable: true,
   get: function get() {
-    return _Accordion.default;
+    return _Breadcrumbs.default;
   }
 });
 
@@ -162,8 +168,10 @@ var _Block = _interopRequireDefault(require("./components/Block/Block"));
 
 var _Subscribe = _interopRequireDefault(require("./components/Forms/Subscribe"));
 
-var _AccordionOutlined = _interopRequireDefault(require("./components/AccordionOutlined/AccordionOutlined"));
+var _Accordion = _interopRequireDefault(require("./components/Accordions/Accordion"));
 
-var _Accordion = _interopRequireDefault(require("./components/Accordion/Accordion"));
+var _AccordionOutlined = _interopRequireDefault(require("./components/Accordions/AccordionOutlined"));
+
+var _Breadcrumbs = _interopRequireDefault(require("./components/Breadcrumbs/Breadcrumbs"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

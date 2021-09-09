@@ -20,7 +20,7 @@ var Accordion = function Accordion(_ref) {
       summary = _ref.summary,
       open = _ref.open;
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "w-full"
+    className: "w-max"
   }, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("details", {
@@ -39,7 +39,7 @@ var Accordion = function Accordion(_ref) {
   }, /*#__PURE__*/_react.default.createElement("path", {
     d: "M7 10l5 5 5-5m0 0l-5 5-5-5"
   }))), label || "What's the best thing about Switzerland?"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "absolute  text-gray-60 mt-2 p-2"
+    className: "text-gray-60 mt-2 p-2"
   }, summary || "I don't know, but the flag is a big plus.")));
 };
 
