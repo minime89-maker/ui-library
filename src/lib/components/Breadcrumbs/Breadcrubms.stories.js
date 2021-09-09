@@ -6,6 +6,30 @@ export default {
 	component: Breadcrumbs,
 }
 
-const Template = (args) => <Breadcrumbs {...args} />
+const links = [
+	{
+	  label: 'Home',
+	  href: '/',
+	},
+	{
+	  label: 'Catalog',
+	  href: '/catalog',
+	},
+  ]
+
+const Template = (args) => {
+	return (
+		<>
+			{links.map(link => {
+				return (
+						<Breadcrumbs {...args} action={link.label} separator='>' />
+				)
+			})}
+		</>
+	)
+}
 
 export const Example = Template.bind({})
+Example.args = {
+	links,
+}

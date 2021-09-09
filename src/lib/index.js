@@ -17,7 +17,8 @@ import Badge from './components/Badge/Badge'
 import AvatarGroup from './components/Avatars/AvatarGroup'
 import Block from './components/Block/Block'
 import Subscribe from './components/Forms/Subscribe'
-import AccordionOutlined from './components/AccordionOutlined/AccordionOutlined'
-import Accordion from './components/Accordion/Accordion'
+import Accordion from './components/Accordions/Accordion'
+import AccordionOutlined from './components/Accordions/AccordionOutlined'
+import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'
 
-export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutlined, MediaCard, Radio, TextArea, TextAreaOutlined, TextCard, Link, Badge, AvatarGroup, Block, Subscribe, AccordionOutlined, Accordion }
+export { Button, Alert, Avatar, Banner, Checkbox, Form, Input, InputOutlined, MediaCard, Radio, TextArea, TextAreaOutlined, TextCard, Link, Badge, AvatarGroup, Block, Subscribe, AccordionOutlined, Accordion, Breadcrumbs }
