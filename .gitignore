@@ -25,4 +25,6 @@ yarn-error.log*
 # custom
 /dist/style/tailwind.css
 src/lib/components/Grid
+src/lib/components/Range
+src/lib/components/Tooltip
 tailwind.json
