@@ -66,7 +66,7 @@ Input.propTypes = {
   onFocus: _propTypes.default.func,
   onBlur: _propTypes.default.func,
   blue: _propTypes.default.bool,
-  required: _propTypes.default.oneOf(true, false)
+  required: _propTypes.default.oneOf([true, false])
 };
 Input.defaultProps = {
   placeholder: '',

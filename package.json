@@ -22,7 +22,7 @@
   "dependencies": {
     "@carbon/colors": "^10.30.0",
     "@carbon/icons-react": "^10.37.0",
-    "@carbon/type": "^10.33.0",
+    "@carbon/type": "^10.35.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -73,22 +73,22 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/preset-env": "^7.15.0",
+    "@babel/cli": "^7.15.4",
+    "@babel/preset-env": "^7.15.6",
     "@babel/preset-react": "^7.14.5",
-    "@storybook/addon-a11y": "^6.3.7",
-    "@storybook/addon-actions": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/addon-links": "^6.3.7",
-    "@storybook/node-logger": "^6.3.7",
+    "@storybook/addon-a11y": "^6.3.8",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/node-logger": "^6.3.8",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.7",
-    "autoprefixer": "^10.3.1",
+    "@storybook/react": "^6.3.8",
+    "autoprefixer": "^10.3.4",
     "cross-env": "^7.0.3",
-    "cssnano": "^5.0.7",
+    "cssnano": "^5.0.8",
     "postcss": "^8.3.6",
     "storybook-addon-designs": "^6.1.0",
-    "tailwindcss": "^2.2.7"
+    "tailwindcss": "^2.2.15"
   },
   "peerDependencies": {
     "react": "^17.0.2",
