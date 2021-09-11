@@ -2,7 +2,7 @@ import React from 'react';
 import  TextCard  from './TextCard';
 
 export default {
-	title: 'Example/Cards',
+	title: 'Example/TextCard',
 	component: TextCard,
 }
 
