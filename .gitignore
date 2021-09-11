@@ -27,4 +27,5 @@ yarn-error.log*
 src/lib/components/Grid
 src/lib/components/Range
 src/lib/components/Tooltip
+src/lib/components/Breadcrumbs
 tailwind.json

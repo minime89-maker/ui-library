@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Example = exports.default = void 0;
+exports.Default = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -17,9 +17,15 @@ var _default = {
 };
 exports.default = _default;
 
-var Template = function Template(args) {
+var Template2 = function Template2(args) {
   return /*#__PURE__*/_react.default.createElement(_Breadcrumbs.default, args);
 };
 
-var Example = Template.bind({});
-exports.Example = Example;
+var Default = Template2.bind({});
+exports.Default = Default;
+Default.args = {
+  separator: '>',
+  action: 'Home',
+  link: '/home',
+  current: 'Catalog'
+};
