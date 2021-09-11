@@ -23,6 +23,7 @@
     "@carbon/colors": "^10.30.0",
     "@carbon/icons-react": "^10.37.0",
     "@carbon/type": "^10.35.0",
+    "@storybook/addon-storyshots": "^6.3.8",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",

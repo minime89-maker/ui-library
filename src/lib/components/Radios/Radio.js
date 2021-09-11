@@ -26,7 +26,7 @@ import React from 'react'
 
 Radio.propTypes = {
 	name: PropTypes.string.isRequired,
-	id: PropTypes.string.isRequired,
+	id: PropTypes.number.isRequired,
 	label: PropTypes.string.isRequired,
 	onChange: PropTypes.func,
 	value: PropTypes.string,
