@@ -2,8 +2,13 @@ import React from 'react'
 import Link from './Link'
 
 export default {
-	title: 'Example/Links',
+	title: 'Components/Links',
 	component: Link,
+	parameters: {
+		status: {
+			type: 'stable'
+		}
+	}
 }
 
 const Template = (args) => <Link {...args} />

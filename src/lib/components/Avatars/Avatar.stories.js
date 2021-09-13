@@ -3,12 +3,15 @@ import  Avatar  from './Avatar'
 import AvatarGroup from './AvatarGroup'
 
 export default {
-	title: 'Example/Avatars',
+	title: 'Components/Avatars',
 	component: Avatar,
 	parameters: {
 		design: {
 			type: 'figma',
 			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=28%3A2'
+		},
+		status: {
+			type: 'stable'
 		}
 	}
 }

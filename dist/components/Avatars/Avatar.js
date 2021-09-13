@@ -24,7 +24,7 @@ var Avatar = function Avatar(_ref) {
     src: image,
     alt: "Mario",
     className: "w-16 h-16 rounded-full shadow-md border-2 border-gray-30 object-cover"
-  }), /*#__PURE__*/_react.default.createElement("div", null, badge && /*#__PURE__*/_react.default.createElement("div", {
+  }), /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, badge && /*#__PURE__*/_react.default.createElement("div", {
     className: "w-3 h-3 bg-green-60 border border-white absolute right-0 top-2 rounded-full animate-bounce"
   }, badge)));
 };

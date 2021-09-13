@@ -2,8 +2,13 @@ import React from 'react';
 import  TextCard  from './TextCard';
 
 export default {
-	title: 'Example/TextCard',
+	title: 'Template/Showcase',
 	component: TextCard,
+	parameters: {
+		status: {
+			type: 'stable'
+		}
+	}
 }
 
 const Template = (args) => <TextCard {...args} />

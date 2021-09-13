@@ -2,8 +2,13 @@ import React from 'react'
 import  Radio  from './Radio'
 
 export default {
-	title: 'Example/Radio',
+	title: 'Components/Radio',
 	component: Radio,
+	parameters: {
+		status: {
+			type:'beta'
+		}
+	}
 }
 
 const Template = (args) => <Radio {...args} />

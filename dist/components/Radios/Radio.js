@@ -38,7 +38,7 @@ var Radio = function Radio(_ref) {
 
 Radio.propTypes = {
   name: _propTypes.default.string.isRequired,
-  id: _propTypes.default.string.isRequired,
+  id: _propTypes.default.number.isRequired,
   label: _propTypes.default.string.isRequired,
   onChange: _propTypes.default.func,
   value: _propTypes.default.string,

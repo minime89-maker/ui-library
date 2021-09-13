@@ -3,12 +3,15 @@ import  TextArea  from './TextArea'
 import TextAreaOutlined from './TextAreaOutlined'
 
 export default {
-	title: 'Example/TextArea',
+	title: 'Components/TextArea',
 	component: TextArea,
 	parameters: {
 		design: {
 			type: 'figma',
 			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=31%3A26'
+		},
+		status: {
+			type: 'stable'
 		}
 	}
 }

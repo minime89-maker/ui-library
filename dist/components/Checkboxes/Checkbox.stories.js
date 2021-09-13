@@ -12,8 +12,13 @@ var _Checkbox = _interopRequireDefault(require("./Checkbox"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Checkboxes',
-  component: _Checkbox.default
+  title: 'Components/Checkboxes',
+  component: _Checkbox.default,
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 };
 exports.default = _default;
 

@@ -6,7 +6,6 @@ import Block from '../Block/Block'
 	return (
 		<Block className='p-4'>
 			{children && <div className={className}>{children}</div>}
-
 				<p className='uppercase weight-light text-gray-70 text-body1'>{intro}</p>
 				<p className=' text-h3 pb-2'>{title}</p>
 				<p className='text-gray-60 italic text-body pb-3 break-words'>{subtitle}</p>

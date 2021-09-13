@@ -12,12 +12,15 @@ var _MediaCard = _interopRequireDefault(require("./MediaCard"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Cards',
+  title: 'Template/Showcase',
   component: _MediaCard.default,
   parameters: {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=145%3A580'
+    },
+    status: {
+      type: 'stable'
     }
   }
 };

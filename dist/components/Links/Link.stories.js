@@ -12,8 +12,13 @@ var _Link = _interopRequireDefault(require("./Link"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Links',
-  component: _Link.default
+  title: 'Components/Links',
+  component: _Link.default,
+  parameters: {
+    status: {
+      type: 'stable'
+    }
+  }
 };
 exports.default = _default;
 
