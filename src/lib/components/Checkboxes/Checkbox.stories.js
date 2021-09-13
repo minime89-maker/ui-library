@@ -2,8 +2,13 @@ import React from 'react'
 import  Checkbox  from './Checkbox'
 
 export default {
-	title: 'Example/Checkboxes',
+	title: 'Components/Checkboxes',
 	component: Checkbox,
+	parameters: {
+		status: {
+			type: 'beta'
+		}
+	}
 }
 
 const Template = (args) => <Checkbox {...args} />

@@ -12,8 +12,11 @@ var _Range = _interopRequireDefault(require("./Range"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Range',
-  component: _Range.default
+  title: 'Components/Range',
+  component: _Range.default,
+  parameters: {
+    status: 'alpha'
+  }
 };
 exports.default = _default;
 

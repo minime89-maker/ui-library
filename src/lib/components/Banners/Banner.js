@@ -8,12 +8,12 @@ import React from 'react'
 		<div className=' w-screen py-10 px-14 ' style={{backgroundImage:`url(${image})`, width: '100%', height: '100%', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center'}}>
 			{children && <div className={className}>{children}</div>}
 			<div className='w-1/2 text-left'>
-				<p className='text-h1 text-gray-10 pb-4 font-semibold'>{title}</p>
-				<p className='text-h4 text-gray-10 pb-20 italic'>{description}</p>
+				<p className='text-h1 text-gray-80 pb-4 font-semibold'>{title}</p>
+				<p className='text-h4 text-gray-60 pb-20 italic'>{description}</p>
 			</div>
 			<div className='flex items-center justify-start'>
-			    <a href='https://www.mastercard.com/global/en.html' className='text-gray-20 text-body hover:underline mr-14'>Paying with Credit Card ?</a>
-				{cta || <Button variant='error' size='large'>PAY NOW</Button>}
+			    <a href='https://www.mastercard.com/global/en.html' className='text-gray-30 text-body hover:underline mr-14'>Paying with Credit Card ?</a>
+				{cta || <Button variant='primary' size='large'>PAY NOW</Button>}
 			</div>
 		</div>
 	)
@@ -29,7 +29,7 @@ Banner.propTypes = {
 }
 
 Banner.defaultProps = {
-	image: 'https://images.unsplash.com/photo-1584476509080-54a2c8df05ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+	image: 'https://images.unsplash.com/photo-1577962144759-8dec6b55c952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1778&q=80',
 	children: null,
 	className: '',
 	cta: null,

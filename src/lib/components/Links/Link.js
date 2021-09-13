@@ -11,10 +11,10 @@ const Links = ({  href, alt, children, className, target, label, underline }) =>
 		
 
 	return (
-		<div>
+		<>
 			{children && <div className={classes}>{children}</div>}
 			<a href={href} label={label} alt={alt} target={target} className={classes} underline={underline.toString()} >{children || label}</a>
-		</div>
+		</>
 	)
 }
 

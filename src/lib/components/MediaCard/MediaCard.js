@@ -7,14 +7,6 @@ import Button from '../Buttons/Button'
 	return (
 		<div className='pb-2 w-80 shadow-md'>
 			{children && <div className={className}>{children}</div>}
-					{/* <img src={media} alt='Super Mario' width={width} height={height} className='rounded-t-extra rounded-b-none overflow-hidden bg-auto'/>
-				<div className='p-4'>
-					<p className='uppercase weight-light text-gray-70 text-body1 pt-2'>{intro}</p>
-					<p className='text-h3 pb-2'>{title}</p>
-					<p className='w-max bg-gray-10 text-gray-60 italic text-body my-4 px-2 rounded-default shadow font-semibold'>{category}</p>
-					<p className=' text-gray-60 text-body pb-3 weight-light'>{description}</p>
-				</div>
-				<Button variant='secondary' className='mx-auto my-4'>Read More</Button> */}
 					{image || <img src={media} alt={title} width={width} height={height} className='w-full object-contain rounded-t-extra' />}
 				<div className='px-3 align-left'>
 					{cardBody || <div>

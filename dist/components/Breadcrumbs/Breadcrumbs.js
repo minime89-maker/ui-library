@@ -31,23 +31,7 @@ var Breadcrumbs = function Breadcrumbs(_ref) {
     "aria-current": "page"
   }, current)), children && /*#__PURE__*/_react.default.createElement("li", {
     className: className
-  }, children)) // <nav aria-label="breadcrumb">
-  // 	<ol className="breadcrumb flex items-center pt-3 pb-2" >
-  // 		<li className="breadcrumb-item">
-  // 			<a className={`font-normal text-md px-2 py-1 tracking-wide hover:bg-gray-10 rounded-default`}
-  // 				aria-current="page"
-  // 				href={link}
-  // 			>
-  // 				{!action ? 'Home' : action}
-  // 			</a>
-  // 		</li>
-  // 		<>
-  // 			{/* {separator && <div className="text-sm text-gray-60 mx-2">{separator}</div>} */}
-  // 		</>
-  // 	</ol>
-  // 	{ children && <div className={className}>{children}</div> }
-  // </nav>
-  ;
+  }, children));
 };
 
 Breadcrumbs.propTypes = {

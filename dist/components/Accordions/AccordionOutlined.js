@@ -15,16 +15,17 @@ var AccordionOutlined = function AccordionOutlined(_ref) {
   var children = _ref.children,
       className = _ref.className,
       label = _ref.label,
-      summary = _ref.summary;
-  return /*#__PURE__*/_react.default.createElement("div", {
-    className: "w-max"
-  }, children && /*#__PURE__*/_react.default.createElement("div", {
+      summary = _ref.summary,
+      open = _ref.open,
+      disabled = _ref.disabled;
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
   }, children), /*#__PURE__*/_react.default.createElement("details", {
-    className: "relative rounded-default border-2 border-gray-30 text-gray-80"
+    className: "relative rounded-default border-2 border-gray-30 text-gray-80 overflow-hidden",
+    open: open
   }, /*#__PURE__*/_react.default.createElement("summary", {
-    className: "flex items-center justify-between p-2 cursor-pointer hover:bg-gray-10"
-  }, label || "What's the best thing about Switzerland?", /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("svg", {
+    className: "flex items-center justify-between p-2 cursor-pointer hover:bg-gray-10 ".concat(disabled ? 'cursor-not-allowed' : '')
+  }, label || "What's the best thing about Switzerland?", /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("svg", {
     className: "w-4 h-4 ml-2",
     fill: "none",
     strokeLinecap: "round",
@@ -43,11 +44,17 @@ AccordionOutlined.propTypes = {
   children: _propTypes.default.node,
   className: _propTypes.default.string,
   label: _propTypes.default.node,
-  summary: _propTypes.default.node
+  summary: _propTypes.default.node,
+  open: _propTypes.default.bool,
+  disabled: _propTypes.default.bool
 };
 AccordionOutlined.defaultProps = {
   className: '',
-  children: null
+  children: null,
+  label: '',
+  summary: '',
+  open: false,
+  disabled: false
 };
 var _default = AccordionOutlined;
 exports.default = _default;

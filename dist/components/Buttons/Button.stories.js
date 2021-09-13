@@ -14,12 +14,15 @@ var _iconsReact = require("@carbon/icons-react");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example / Buttons',
+  title: 'Components / Buttons',
   component: _Button.default,
   parameters: {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=2%3A2'
+    },
+    status: {
+      type: 'stable'
     }
   }
 };

@@ -14,12 +14,15 @@ var _Subscribe = _interopRequireDefault(require("./Subscribe"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Forms',
+  title: 'Template/Showcase',
   component: _Form.default,
   parameters: {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=134%3A68'
+    },
+    status: {
+      type: 'stable'
     }
   }
 };

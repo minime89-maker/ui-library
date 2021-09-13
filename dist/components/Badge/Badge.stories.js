@@ -12,12 +12,15 @@ var _Badge = _interopRequireDefault(require("./Badge"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Badge',
+  title: 'Components/Badge',
   component: _Badge.default,
   parameters: {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=151%3A623'
+    },
+    status: {
+      type: 'stable'
     }
   }
 };

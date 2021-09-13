@@ -2,7 +2,7 @@ import React from 'react';
 import Showcase from './Showcase'
 
 export default {
-	title: 'Showcase',
+	title: 'Template/Showcase',
 	component: Showcase,
 }
 

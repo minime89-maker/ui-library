@@ -26,7 +26,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var Range = function Range(_ref) {
   var children = _ref.children,
       className = _ref.className,
-      id = _ref.id,
+      value = _ref.value,
       min = _ref.min,
       max = _ref.max,
       step = _ref.step;
@@ -44,29 +44,32 @@ var Range = function Range(_ref) {
     onChange: function onChange(e) {
       return setValue(e.target.value);
     }
-  }, step || ''), /*#__PURE__*/_react.default.createElement("input", {
+  }, value || ''), /*#__PURE__*/_react.default.createElement("input", {
     type: "range",
-    id: id,
     min: min,
-    max: max
+    max: max,
+    value: value,
+    step: step,
+    class: "appearance-none overflow-visible h-2 w-60 bg-white border-2 rounded-lg cursor-pointer"
   })));
 };
 
 Range.propTypes = {
-  id: _propTypes.default.string,
   min: _propTypes.default.number,
   max: _propTypes.default.number,
+  value: _propTypes.default.number,
+  step: _propTypes.default.number,
   label: _propTypes.default.string,
   children: _propTypes.default.node,
   className: _propTypes.default.string
 };
 Range.defaultProps = {
-  id: 'file',
-  min: 0,
-  max: 100,
   label: '',
   children: null,
-  className: ''
+  className: '',
+  step: 1,
+  min: 0,
+  max: 100
 };
 var _default = Range;
 exports.default = _default;

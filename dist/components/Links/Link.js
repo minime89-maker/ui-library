@@ -26,7 +26,7 @@ var Links = function Links(_ref) {
     'target': target,
     ' hover:underline': underline
   }, className);
-  return /*#__PURE__*/_react.default.createElement("div", null, children && /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
     className: classes
   }, children), /*#__PURE__*/_react.default.createElement("a", {
     href: href,

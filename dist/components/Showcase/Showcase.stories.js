@@ -12,7 +12,7 @@ var _Showcase = _interopRequireDefault(require("./Showcase"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Showcase',
+  title: 'Template/Showcase',
   component: _Showcase.default
 };
 exports.default = _default;

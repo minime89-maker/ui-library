@@ -12,8 +12,13 @@ var _Tooltip = _interopRequireDefault(require("./Tooltip"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Tooltip',
-  component: _Tooltip.default
+  title: 'Components/Tooltip',
+  component: _Tooltip.default,
+  parameters: {
+    status: {
+      type: 'beta'
+    }
+  }
 };
 exports.default = _default;
 

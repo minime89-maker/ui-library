@@ -14,12 +14,15 @@ var _DropdownFilled = _interopRequireDefault(require("./DropdownFilled"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Dropdown',
+  title: 'Components/Dropdown',
   component: _Dropdown.default,
   parameters: {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=31%3A26'
+    },
+    status: {
+      type: 'stable'
     }
   }
 };

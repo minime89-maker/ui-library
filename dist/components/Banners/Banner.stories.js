@@ -12,8 +12,17 @@ var _Banner = _interopRequireDefault(require("./Banner"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Template',
-  component: _Banner.default
+  title: 'Components/Banner',
+  component: _Banner.default,
+  parameters: {
+    status: {
+      type: 'stable'
+    },
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=265%3A218'
+    }
+  }
 };
 exports.default = _default;
 

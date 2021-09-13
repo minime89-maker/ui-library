@@ -14,12 +14,15 @@ var _AvatarGroup = _interopRequireDefault(require("./AvatarGroup"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _default = {
-  title: 'Example/Avatars',
+  title: 'Components/Avatars',
   component: _Avatar.default,
   parameters: {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=28%3A2'
+    },
+    status: {
+      type: 'stable'
     }
   }
 };

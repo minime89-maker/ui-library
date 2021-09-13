@@ -3,12 +3,15 @@ import  Button  from './Button'
 import { Bee24 } from '@carbon/icons-react'
 
 export default {
-  title: 'Example / Buttons',
+  title: 'Components / Buttons',
   component: Button,
   parameters: {
     design: {
       type: 'figma',
       url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=2%3A2'
+    },
+    status: {
+      type: 'stable'
     }
   }
 }

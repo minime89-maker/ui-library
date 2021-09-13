@@ -2,12 +2,15 @@ import React from 'react'
 import  Alert  from './Alert'
 
 export default {
-	title: 'Example / Alerts',
+	title: 'Components / Alerts',
 	component: Alert,
 	parameters: {
 		design: {
 			type: 'figma',
 			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=12%3A2'
+		  },
+		  status: {
+			  type: 'stable'
 		  }
 	}
 }
