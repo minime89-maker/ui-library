@@ -39,9 +39,9 @@ var Accordion = function Accordion(_ref) {
     stroke: "currentColor"
   }, /*#__PURE__*/_react.default.createElement("path", {
     d: "M7 10l5 5 5-5m0 0l-5 5-5-5"
-  }))), label || "What's the best thing about Switzerland?"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "text-gray-60 mt-2 p-2"
-  }, summary || "I don't know, but the flag is a big plus.")));
+  }))), label || "Section 1"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "text-gray-60 mt-2 p-2 max-w-xs"
+  }, summary || "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor")));
 };
 
 Accordion.propTypes = (_Accordion$propTypes = {

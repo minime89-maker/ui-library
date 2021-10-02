@@ -11,10 +11,10 @@ const Accordion = ({ children, className, label, summary, open, disabled }) => {
 					<>
 						<svg className={`w-4 h-4 ml-2 ${open === true ? 'transform rotate-180': ''}`} fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M7 10l5 5 5-5m0 0l-5 5-5-5"></path></svg>
 					</>
-					{label || "What's the best thing about Switzerland?"}
+					{label || "Section 1"}
 				</summary>
-				<div className='text-gray-60 mt-2 p-2'>
-					{summary || "I don't know, but the flag is a big plus."}
+				<div className='text-gray-60 mt-2 p-2 max-w-xs'>
+					{summary || "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor"}
 				</div>
 			</details>
 		</>

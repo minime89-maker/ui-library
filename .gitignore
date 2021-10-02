@@ -27,8 +27,8 @@ yarn-error.log*
 src/lib/components/Grid
 src/lib/components/Range
 src/lib/components/Tooltip
-src/lib/components/Breadcrumbs
 src/lib/components/Toggle
 src/lib/MinjaUI.test.js
 src/lib/__snapshots__
 tailwind.json
+src/lib/components/Typography

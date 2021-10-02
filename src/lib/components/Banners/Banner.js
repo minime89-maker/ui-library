@@ -12,7 +12,7 @@ import React from 'react'
 				<p className='text-h4 text-gray-60 pb-20 italic'>{description}</p>
 			</div>
 			<div className='flex items-center justify-start'>
-			    <a href='https://www.mastercard.com/global/en.html' className='text-gray-30 text-body hover:underline mr-14'>Paying with Credit Card ?</a>
+			    <a href='https://www.mastercard.com/global/en.html' className='text-gray-60 text-body hover:underline mr-14'>Paying with Credit Card ?</a>
 				{cta || <Button variant='primary' size='large'>PAY NOW</Button>}
 			</div>
 		</div>
