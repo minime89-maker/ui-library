@@ -11,7 +11,7 @@ export default {
 			url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=241%3A208'
 		},
 		status: {
-			type: 'rc'
+			type: 'stable'
 		  },
 	}
 }

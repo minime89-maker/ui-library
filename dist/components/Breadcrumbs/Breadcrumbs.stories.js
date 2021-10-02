@@ -17,6 +17,10 @@ var _default = {
   parameters: {
     status: {
       type: 'beta'
+    },
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/6TRta7vFoQwV601Fw9uJUl/minja-ui?node-id=304%3A216'
     }
   }
 };

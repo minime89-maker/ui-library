@@ -42,7 +42,7 @@ var Banner = function Banner(_ref) {
     className: "flex items-center justify-start"
   }, /*#__PURE__*/_react.default.createElement("a", {
     href: "https://www.mastercard.com/global/en.html",
-    className: "text-gray-30 text-body hover:underline mr-14"
+    className: "text-gray-60 text-body hover:underline mr-14"
   }, "Paying with Credit Card ?"), cta || /*#__PURE__*/_react.default.createElement(_Button.default, {
     variant: "primary",
     size: "large"

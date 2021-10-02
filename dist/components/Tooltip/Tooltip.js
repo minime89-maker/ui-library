@@ -17,8 +17,8 @@ var Tooltip = function Tooltip(_ref) {
   return /*#__PURE__*/_react.default.createElement("div", {
     class: "has-tooltip"
   }, /*#__PURE__*/_react.default.createElement("span", {
-    class: "tooltip rounded-default shadow-lg p-1 bg-gray-10 text-red-50 mt-6 "
-  }, "Some Nice Tooltip Text"), "Hover");
+    class: "tooltip"
+  }, "Some Nice Tooltip Text"), "Tooltip");
 };
 
 Tooltip.propTypes = {

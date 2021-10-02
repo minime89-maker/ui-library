@@ -25,7 +25,7 @@ var AccordionOutlined = function AccordionOutlined(_ref) {
     open: open
   }, /*#__PURE__*/_react.default.createElement("summary", {
     className: "flex items-center justify-between p-2 cursor-pointer hover:bg-gray-10 ".concat(disabled ? 'cursor-not-allowed' : '')
-  }, label || "What's the best thing about Switzerland?", /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("svg", {
+  }, label || "Section 1", /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("svg", {
     className: "w-4 h-4 ml-2",
     fill: "none",
     strokeLinecap: "round",
@@ -36,8 +36,8 @@ var AccordionOutlined = function AccordionOutlined(_ref) {
   }, /*#__PURE__*/_react.default.createElement("path", {
     d: "M7 10l5 5 5-5m0 0l-5 5-5-5"
   })))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "text-gray-60  mt-2 p-2"
-  }, summary || "I don't know, but the flag is a big plus.")));
+    className: "text-gray-60 mt-2 p-2 max-w-xs"
+  }, summary || "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor")));
 };
 
 AccordionOutlined.propTypes = {

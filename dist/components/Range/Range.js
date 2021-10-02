@@ -34,7 +34,7 @@ var Range = function Range(_ref) {
   var _React$useState = _react.default.useState(0),
       _React$useState2 = _slicedToArray(_React$useState, 2),
       isValue = _React$useState2[0],
-      setValue = _React$useState2[1];
+      setIsValue = _React$useState2[1];
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children && /*#__PURE__*/_react.default.createElement("div", {
     className: className
@@ -42,7 +42,7 @@ var Range = function Range(_ref) {
     className: "flex flex-col items-baseline justify-center"
   }, /*#__PURE__*/_react.default.createElement("label", {
     onChange: function onChange(e) {
-      return setValue(e.target.value);
+      return setIsValue(e.target.value);
     }
   }, value || ''), /*#__PURE__*/_react.default.createElement("input", {
     type: "range",
